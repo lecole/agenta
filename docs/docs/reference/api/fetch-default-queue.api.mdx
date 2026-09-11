@@ -1,0 +1,71 @@
+---
+id: fetch-default-queue
+title: "Fetch Default Queue"
+description: "Fetch Default Queue"
+sidebar_label: "Fetch Default Queue"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1WFlv2zgQ/ivCPLWAGqfBPulp3RytN7ubNE76EhgGLY1tthSl8AjqGvrviyF1W3GcbPpkm5z55uQc3oJhKw3RPZw/MmGZ4ZnUMAshy1G5X5MEIliiidfzBJfMCjN/sGgRQsiZYikaVASwBclShAiUlXOeQAhcQgQ5M2sIQeGD5QoTiIyyGIKO15gyiLZgNjlxaaO4XEEIy0ylzEAE1joUw40gghsrg0kCRTEjNJ1nUqMmgJPjY/pIUMeK56QyRDC1cYxaL60IbkpiCCHOpEFpiJzlueCxs3D0XRPPtqVUrsh+w72EOLOeqdSVS4MrVC3lTh1FCKWHIDouQvBuIllyc7V0LuriLoXz/dMEXM81PliUhjPRUmCRZQKZbCkw0cG0oWwpsmRCYxESVH22H+esJNsBKcKKL1t8x9i02Jrk+UpGXzjDirAWJK0QUMwIYcdkliScOJm47hjfUPS0beGWWUMnwzAQcxVbwdS7v9kCxV86kx+urMmteQ99cyizKoP61LBj/K51DfetNx9SNOyVxrYs62VdR3C66J60ffScRy6seMYh4Ra4wfRALqYU2+z1S4/3ZU79h5xZhGWZOchlOxj/Em8RdovF66DOWhBFCLFCZjCZM7MPsFXeEmbwg+FOn6elnHrYYOycZfPkdwi587ClkAQF/gYhZx62FFK5a7GhXnGYHNcQDnHWp43rFI2/3lRK5a1aSuWwN5VSuauW8nbQHu8Rlf4f6f+tZC9C0IYZu7eKhYDSpjRl5CgTf+K6IzV4ZaX0R9o3bTKGcWEVtWxUKlN0FDMZoxCYwGyo70y9EkMq122slk5BY/3S3G29VqOa86RnVlkNW1+eC0O/OB5eLO80qmCSuEaiY5RM8WyPRi9V5GnB01JYLdxgPv+Bm8Mkv0iSwTy4JOQihAWjGVPzX8PVfbD99fA+EUQwJYgaMFsuNQ6XssMhrzzIC0agM+a61cAEVM7Hrxl9d6U3c/V9BTz4PJxOQ/ocblE9RxcFcf1xcrI7dn9jgieOJTinh/v6mTtBw7joPLUugcjizu1LJqhZP0lbg1/mFXTjm14NhakZSLRmK2wy/mlS54zglm6plEsafoi8qsiynIZi87MFsxORU/Llz+E8bGcC+carX9K1C3cdIh+hp11x5kOwL0W+3N5e7wD6/OgmxgUtkNVqEXwtF8gUzTqj/XKFxu2TZg0RjLBZRUfKSj3a+tQuRq5p6FFSryga1WO1f1oliJvl3AXd/1wbk+toNEJ7FIvMJkdshdKwI8Y94YwwYqu42TiQ8fXkEjdfkCWoILqftQmmlKs++7pkdcRYzi+RfFjuwmNr1pniv3xKlSvx2nMVLhOWWTsRxk65YHw9gb4HO1f0qFjscqiS5K4h7JndWEu9NHVPCgyy9M/6pjMMwPHRx6NjOsozbVImWyKGY9gbpUtHUJqOcsG4e0hOp20Z33toxdf3f/qI6v8NfJBb++cshHWmDbFutwum8U6JoqDjB4uK4jYL4ZEpzhbkxfstJFzT96RcXXe0rIsSvLsp3837oNlkutpXsZUUWFKdfkEIP3DT/N3hasq6SptteTmOY8xNi22nBFJ+1c/g8/ktFMV/LdT9eQ==
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Fetch Default Queue"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/evaluations/runs/{run_id}/queues/default"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Fetch Default Queue
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"run_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Run Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"queue":{"anyOf":[{"properties":{"flags":{"anyOf":[{"properties":{"is_sequential":{"type":"boolean","title":"Is Sequential","default":false},"is_default":{"type":"boolean","title":"Is Default","default":false}},"type":"object","title":"EvaluationQueueFlags"},{"type":"null"}]},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"status":{"anyOf":[{"type":"string","enum":["pending","queued","running","success","failure","errors","cancelled"],"title":"EvaluationStatus"},{"type":"null"}],"default":"pending"},"data":{"anyOf":[{"properties":{"user_ids":{"anyOf":[{"items":{"items":{"type":"string","format":"uuid"},"type":"array"},"type":"array"},{"type":"null"}],"title":"User Ids"},"scenario_ids":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"type":"null"}],"title":"Scenario Ids"},"step_keys":{"anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"title":"Step Keys"},"batch_size":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Batch Size"},"batch_offset":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Batch Offset"}},"type":"object","title":"EvaluationQueueData"},{"type":"null"}]},"run_id":{"type":"string","format":"uuid","title":"Run Id"}},"type":"object","required":["run_id"],"title":"EvaluationQueue"},{"type":"null"}]}},"type":"object","title":"EvaluationQueueResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: stop-simple-evaluation
+title: "Stop Evaluation"
+description: "Stop Evaluation"
+sidebar_label: "Stop Evaluation"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlWEtz2zgM/isenNoZNc529uTTukk6ybbdZmO3l4zHA1NwzC71KB+ZqB799x2QkiXbku027amnxBTwAfhAgiDWYPHBwOgerh5RObQySw3MIshy0v7XTQwjMDbL50YmuaI5bQQhghw1JmRJM8YaUkwIRtCIzGUMEcgURpCjXUEEmr46qSmGkdWOIjBiRQnCaA22yMnb0jJ9gAiWmU7Qwgic8yhWWsUCjaeDmxjKcsagJs9SQ4ZxXp+f85+YjNAy946OYOKEIGOWTg3uKmGIQGSppdSyOOa5ksLDDr8Y1lm3fMs1E2JlsCAyF5Qql2Vq6YF0y8cLLxFBTEt0ysLovIxatHiDafFx6VnbBl8qn5F+AWnmSj5Sy/4iyxRh2rJ/YwbvWablwRKVoTJidRT2BIBxkOqGECoznMTDEBdBqhviqyN31Il/vVCPDyhWJ/gQpLohTK6kPYYw8UIdACv0UegqMb0Y1+gD8XI9MJaMNWSP40xrwT4gjeIEd6ZB7IA3As0pOBvJHqhq02f6ONZVI9oDJpyxWXIU6CKI9YCsXILpUYxrL9UDgc5mRxHGLLQHUEa1Vrb4QsJ2FrY7l771ZaCMNkZSpxSUM9bfKxAYx5L1UN1ulYpGYsfTFm5Vb3mlGwaE1MIp1C/e44LU3yZLX310Nnf2JewGw8W4DmdXGvZC34+u0Z6G8CEhiz8YbCuynUK9ZThZbK+0OTrGyFunjhASrUFaSk7UQq2xOMjLju73kfqBySyj6p4+ibI9jH9Yt4y279cfg7psQZQRCE1oKZ6jPQTYagxitPTKSu9Pv5WLADsYe7JcHv8KI58CbGUkJkW/wMhlgK2M1HQtCu6yTrPjW6lTyHpT+Oaq4eunWqnZ2lipCfupVmq6NlZ+HnTAeyRtnrH9P1fqHD/uVrntns9YtO5glYuAUpdwJ59TGocV32Fx66NdmoYlE/pgDhalcpp7K9I63LkCU0FKUQyzrltpEpzovJO4DSrmxlK+42VV/I6TvV8C+wp9X+CivvZX1d3tr2n2riKz4NoVmuwe4yfUUG7kisHER8qKoR/7LUKves8m+Naj6bcgYNzE25Cw6XB/Cwo2TXpDgKac0HZXp86OawfyrtIv/YNcOK0pFcWhcrhAK1ZzI791dzGnGH3DEIMJQ3CXiU9zTVb3tZKnIH7Ap8FdheFZsbqYx6Sw6ITcbzw7iLG6GFx6iJMfDpdo8aJFY0e5PgA18UOeBpDRngnxTPXNuKYsWe3P16/3pzufUck4HMsrvsx+fLQTk0Wp/JilPrnbAioTW1+/59Ux2z3mrcdSJmqyIDEPXee8aeKNwQdqjm2/qCdjMOWv3P6k/GBg8bqLSasXhLBPLZi9lFwwl0+2cw8287x7z01wv5JrNzubFIUM9VNxGVJwaI9cT6e3e4Bhf+yM/WyWD67aE8uE7CrjmWaeGesnmHYFIxiG6eawmdGZ4XprjlkOeQrKLRTpx3rg6bRiZcylT3j4ubI2N6PhkNyZUJmLz/CBUotnKIPgjDGE09IWHmR8e/OOimvCmDSM7mdtgQnv07DztsU22cJcviPmrxq+jp1dZVp+qwP2w9dV0Cr9Llhm7U0w9s4Nxrc3sMve1ic+UCj8/qkt+c8Q7YTdRMuXU+KPE1jC5K/Nl63mGc7P/jg75yVOSTWbqUzs52/n2VmRwNtzmCuU/gB5f9ZVau8hpBbaA1judke7Y2qf31kEK94Zo3tYrxdo6JNWZcnLvsXl/ETwiFrigum7X0MsDf8fVxOePRc3lQhe3FWH5eWgefJvu14nNeWMsn/8CyL4j4q9wbqvJ6t626wrmbEQlNuW9l754/21OQa3HydTKMv/AdmBPe8=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Stop Evaluation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/simple/evaluations/{evaluation_id}/stop"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Stop Evaluation
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"evaluation_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Evaluation Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"evaluation":{"anyOf":[{"properties":{"flags":{"anyOf":[{"properties":{"is_live":{"type":"boolean","title":"Is Live","default":false},"is_active":{"type":"boolean","title":"Is Active","default":false},"is_closed":{"type":"boolean","title":"Is Closed","default":false},"is_queue":{"type":"boolean","title":"Is Queue","default":false},"is_cached":{"type":"boolean","title":"Is Cached","default":false},"is_split":{"type":"boolean","title":"Is Split","default":false},"has_queries":{"type":"boolean","title":"Has Queries","default":false},"has_testsets":{"type":"boolean","title":"Has Testsets","default":false},"has_traces":{"type":"boolean","title":"Has Traces","default":false},"has_testcases":{"type":"boolean","title":"Has Testcases","default":false},"has_evaluators":{"type":"boolean","title":"Has Evaluators","default":false},"has_custom":{"type":"boolean","title":"Has Custom","default":false},"has_human":{"type":"boolean","title":"Has Human","default":false},"has_auto":{"type":"boolean","title":"Has Auto","default":false}},"type":"object","title":"EvaluationRunFlags"},{"type":"null"}]},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"data":{"anyOf":[{"properties":{"status":{"anyOf":[{"type":"string","enum":["pending","queued","running","success","failure","errors","cancelled"],"title":"EvaluationStatus"},{"type":"null"}]},"query_steps":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"additionalProperties":{"type":"string","enum":["custom","human","auto"]},"propertyNames":{"format":"uuid"},"type":"object"},{"type":"null"}],"title":"Query Steps"},"testset_steps":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"additionalProperties":{"type":"string","enum":["custom","human","auto"]},"propertyNames":{"format":"uuid"},"type":"object"},{"type":"null"}],"title":"Testset Steps"},"application_steps":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"additionalProperties":{"type":"string","enum":["custom","human","auto"]},"propertyNames":{"format":"uuid"},"type":"object"},{"type":"null"}],"title":"Application Steps"},"evaluator_steps":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"additionalProperties":{"type":"string","enum":["custom","human","auto"]},"propertyNames":{"format":"uuid"},"type":"object"},{"type":"null"}],"title":"Evaluator Steps"},"repeats":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Repeats"},"concurrency":{"anyOf":[{"properties":{"batch_size":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Batch Size"},"max_retries":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Max Retries"},"retry_delay":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Retry Delay"}},"type":"object","title":"EvaluationRunDataConcurrency"},{"type":"null"}]}},"type":"object","title":"SimpleEvaluationData"},{"type":"null"}]}},"type":"object","title":"SimpleEvaluation"},{"type":"null"}]}},"type":"object","title":"SimpleEvaluationResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
