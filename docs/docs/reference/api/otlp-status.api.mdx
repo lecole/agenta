@@ -1,11 +1,11 @@
 ---
 id: otlp-status
 title: "Status check for OTLP"
-description: "Status check for OTLP"
+description: "Return the OTLP endpoint liveness status."
 sidebar_label: "Status check for OTLP"
 hide_title: true
 hide_table_of_contents: true
-api: eJx1k8Fu2zAMhl/F4FmIkx19ajAMW9ABDZb2FBgDozCxWtlSJSqYZ/jdB9qO2wSYL7aknyL5/XQHjOcIxR6eDpHCBQ/GGm6hVOA8BWTjms0RCnBs/e/IyCmCgkDRuyZShKKDL8ulvI4UdTBeIqCAXdKaYjwlm/2axKBAu4apYZGj99boIUH+GiWmg6grqlG+fJD0bMYMU96iA249QQGRg2nOoIANW9nYjYq+V1eJO7yS5qHW92QCHaXJ6aLyI/Crs5Y0j/Fzpb086r6lQZPpivRbdnIhe3r+uQUFNXHlhNGZJJ9HrqCAXIjll1XOATUJNOFLQWB3kIIVDXoDvbouK2YfizyntNDWpeMCz9QwLtCMwlLu0CmIQXLJert5pPYH4ZECFPvys2AnKEd6t7KZIXrzSC0oaLCW9Tpx5YL5O1gCCoz0XI1RAsM0JzeET+TWQ3HZersBBdLYSGm5WC2WcM/uRixTgHqYgmvu4RjUHYi5f1BANRo5Y8L64eNAKvMuco3Np/v+Z9VNUTMJpj+ce4umgX4qoZts3A+DLw2uZNpGK0sFlYssp113wEgvwfa9bL8nCuJNqeCCweBBSO3LXl1Bim1v1ErLWpOXebmgTaMfdz+E2DnP1vdvz9D3/wD1VkA2
+api: eJzdVMtu2zAQ/BViz4Ts9KhTjaJojQRIkLgny6hpai0xkUiGXDlVBf17saIdx26/oBc9uEvOcGbIAUhVEfI13Hu0K2ywRQo9bCSUGHUwnoyzkMMjUhesoBrF/eruQaAtvTOWRGMOaDFGEUlRF7PCFvbOVDW9IT9FQFWaqcEHt8NMpJWi2A4FpDkF5KIAbuwLGLfirUZbWIYKriMMwkTRus4SlplYWkJbYin2LogaVUO10DXqlyj2wbXifoVNYbVrGtTkQhQ73LuAzLxnjoEE/vIukLGVoKA0xgwkOI9B8V6XJeTgqPE/EzmQEDB6ZyNGyAf4NJ/z61Kdp05rjHHfNeLx2AwStGOuxO3K+8boCWD2HHnOAFHX2Cr+8oHhySSEI24+APUeIYdIwdgKJJChhgeeTsyuPTpJnWZkYjuJuhUtKhvFPxUVypZCaY2eYrLW2AojZTCO8sTA7Z5R0yTFa2cClpyYI8/NmdeXpHqi90GIS5qX+Tnn4yQzI48M3iLVju2okLG9ohpymLE5s8PNLJkHEiKGAwZO8QBdaLhHeQOjPP3WRD7msxl2mW5cV2aqQksqUyY1bngN3QVD/bTI4mF5i/13VCUGyNebjw1P7Foy6rLt3S7lzS32IMGqlv8XHdUumN+T+yDBsAh1msXbNHbvpulHFRcTObF4WP4l3UWJ46X0FK8T0lQGebXt825BArbKcJFQtZ/fKzBKYA0TzDy7yeY85F2kVtkPEMnbdOKmI8huXvMcztH/7y+Oo+mEv2jmG2Us6zbpPxwTu56uE5BwuOH+lNqNhNpF4uow7FTEH6EZRx5+7TBwDDcSDioYteNQrDejPGWGE/qCPfs9HVteWTVdit7VNcPJfT9G376uYBz/AMxxFVE=
 sidebar_class_name: "get api-method"
 info_path: reference/api/agenta-api
 custom_edit_url: null
@@ -36,7 +36,11 @@ import Heading from "@theme/Heading";
 
 
 
-Status check for OTLP
+Return the OTLP endpoint liveness status.
+
+Lightweight readiness probe. Returns `{"status": "ready"}` when
+the router is mounted. Intended for health checks from OTel
+collectors before they start exporting traces.
 
 <ParamsDetails
   parameters={undefined}
@@ -54,7 +58,7 @@ Status check for OTLP
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"status":{"type":"string","title":"Status"}},"type":"object","required":["status"],"title":"CollectStatusResponse"}}}}}}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"status":{"type":"string","title":"Status","description":"Readiness string. `ready` means the router is mounted and accepts OTLP ingest."}},"type":"object","required":["status"],"title":"CollectStatusResponse","description":"OTLP endpoint readiness response."}}}}}}
 >
   
 </StatusCodes>

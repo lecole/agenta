@@ -1,0 +1,71 @@
+---
+id: query-records
+title: "Query Records"
+description: "Query Records"
+sidebar_label: "Query Records"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtvGzcQ/isE0eNalo2iQPdUpUkRIyni2kp7sFV7tDvSMtklGT4iqYL+ezHkviRZsms4p8YXS+Twm+HMNw9xzR3MLU9v+DVaK5S0fJJwpdGAE0pe5DzlXzya1Z3BTJnc8oQb/OLRulcqX/F0zTMlHUpHH0HrUmTh5OknqySt2azACuiTNoTrBNqwHvXdiZy+uZVGnnLrjJBznnAnXEkLtVXsIuebhC+EzNWCJEiZXH2Y8fRmF1jNZhZdD1RIh3M0POGVkKLyFU+HnYYPUTzhOc7Al46nw03CS1GJAxiwjBjnw2EP8axDfB/O9gDPhgTpCqP8vLiz5D6Z4ZMtHMeD7Lo5uCG0eFJNP2Hm6qAIgzmFck/TZM+hYwPSZkZo91frU7I4rgkKHX+NpZgSEZDhMsOwzJxirkBmCzCYs8wbqwy7b0HuB7fyVt7vWnDPtJA2npSgbaFcwqxiMVZMw1zIOVNf0TCQDLRGmZ8oWa5YqeZMSCtyZK4AdyunysucCcusg2mJKQOWKZl5Y1C6+igzICxadl+CQ+s6MxImkZSQIRrmyGry2gEbF3grXesWZhByMqe0iknE3NLVLeJnthCuEJIpiXQriXnvTotCZAUDNlNmAaa+Q/TSrcxASuUYLrVBawd8k7QMkL4s+WbyWGR7SbMf06uQoX9Qtl7FFOUbAuwAnPEYFqxW0sZ0OR8O6d926K99lqG1M1+yq1qYJ8/N9Ex5+XAuNRf4NUgEy2KRSddcOKzsA2AGwWF+B267BuwWkJkyFcnwHByeOFHhA+7uWRBh2SiY4XX+LZR8jLC1khxL/AZKXkfYWknjrumqLrRP0OO9yJ/krFerui43/npRLY23Wi2Nw15US+OuVkuk4IG2tI3bocTUqxGe09m0UZTu/1HtZTzV6u0ay55rmqQ75ouuwXRukDkunw3YuCWAUGkTFVoHlX5Rxo9b1M7uKHtYyROsHtN2h2iVNwd8+3TM6wiySTg4Z8TUu1jVOkjIc0FVFcrLXt2jwr3bGY6pG3Xo5HZv5CMpc9S/3jQ0tRoeQ0q4BufQUBv5+2Z48jOczEYnv03WZz9tfjhOPw2Nni8eDEgn5MvXxz866FAjH+m4XTnYSuytjD3UinmHDcbAaq9g2O9D7feh9n8/1Mb5sBv+DqWTrUfbeh7dhOH2x/Pz/fH1TyhFHoZT9sYYZZ4/u+boQJRH5tFSZVu7TyiwbeecHK4P71U0kApEZefHBonf0VqYY1dsDosGZ7SNTUjtYzmoty/CAk2NbtmDaYPWjevS4fLx2km+iebXcr3IdiGKETrsitcxBA8pa0TejseXe4CRH9vECAxiV+1TRoWuUPTGoZV1sXUVPOWndaW3pzUnT8MbSGgB5isaGwLsTUmyoEWIbvxaOKdtenqKfpCVyucDmKN0MAARBSeEkXkj3CqAjC4v3uHqbchLnt5M+gLXRMpIs22xNjSgxTskuyRUoe97Vygj/oncoRCTSfEUeYPoftU937xZQqVL3H2O6Yiz1ZuaHjRsO8kZdYv9FjDcBHbNVJ9co+AHNrq82KvJW1uUqJAFXjaXCts82fFw51iecKxCmnKHUP3S7hCrKFxRzXBwNhiGYVtZV4HsqdjlxZZ9rbeJ9Ke6BBHSMlizrinT/jS3vUKWxKczon1B/Epv+Ho9BYsfTbnZ0HLcT28mCf8KRlDtDyRImqARRT7jqkk66U5C9pJ46SMDdooZUTGeGGXU347KTnopcPnheswTPq2f9SqV0xkDC7oRLHjKOb0MunDJdB3X1rwEOfdUf1IeMenvXwHyCxU=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Query Records"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/sessions/records/query"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Query Records
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"session_id":{"type":"string","title":"Session Id"},"windowing":{"anyOf":[{"properties":{"offset":{"type":"integer","minimum":0,"title":"Offset","default":0},"limit":{"type":"integer","maximum":200,"minimum":1,"title":"Limit","default":100},"through_sequence":{"type":"integer","minimum":0,"title":"Through Sequence"}},"type":"object","required":["through_sequence"],"title":"SessionTranscriptWindowing","description":"Deliberate exception to the shared cursor `Windowing`.\n\n`through_sequence` pins the snapshot, so offset paging over an append-only log inside that\nbound is stable: a concurrent append raises `latest_sequence`, never the page contents. The\ntranscript reader also needs to seek within one pinned snapshot, which a forward-only cursor\ncannot express."},{"type":"null"}]}},"type":"object","required":["session_id"],"title":"SessionRecordQueryRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count"},"records":{"items":{"properties":{"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"record_id":{"type":"string","format":"uuid","title":"Record Id"},"session_id":{"type":"string","title":"Session Id"},"project_id":{"type":"string","format":"uuid","title":"Project Id"},"sequence":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Sequence"},"record_index":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Record Index"},"timestamp":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Timestamp"},"record_type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Record Type"},"record_source":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Record Source"},"attributes":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Attributes"},"turn_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Turn Id"},"span_id":{"anyOf":[{"type":"string","pattern":"^[0-9a-fA-F]{16}$"},{"type":"null"}],"title":"Span Id"},"quarantined_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Quarantined At"}},"type":"object","required":["record_id","session_id","project_id"],"title":"SessionRecord"},"type":"array","title":"Records"},"windowing":{"anyOf":[{"properties":{"offset":{"type":"integer","minimum":0,"title":"Offset","default":0},"limit":{"type":"integer","maximum":200,"minimum":1,"title":"Limit","default":100},"through_sequence":{"type":"integer","minimum":0,"title":"Through Sequence"}},"type":"object","required":["through_sequence"],"title":"SessionTranscriptWindowing","description":"Deliberate exception to the shared cursor `Windowing`.\n\n`through_sequence` pins the snapshot, so offset paging over an append-only log inside that\nbound is stable: a concurrent append raises `latest_sequence`, never the page contents. The\ntranscript reader also needs to seek within one pinned snapshot, which a forward-only cursor\ncannot express."},{"type":"null"}]}},"type":"object","required":["count","records"],"title":"SessionRecordsQueryResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
