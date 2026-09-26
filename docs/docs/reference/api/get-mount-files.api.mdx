@@ -1,0 +1,71 @@
+---
+id: get-mount-files
+title: "Get Mount Files"
+description: "Get Mount Files"
+sidebar_label: "Get Mount Files"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vl1v2zYU/SvCfdoA+SPBnvQ0o+1Sox0aJFk3IDAMRrqW2FEiS1JtPIP/fbikJFOxU6jr8mRLPPeeo/vJA1hWGsju4XfZNtbAJgWpUDPLZbMuIIMS7bams+2OCzSQgmKa1WhRk90BGlYjZBAwvIAUeAMZKGYrSEHj55ZrLCCzusUUTF5hzSA7gN0rsjNW86aEFHZS18xCBm3rvVhuBQG8sGRdgHPpwNZ590yfW9T7EdWOCTPiYs3+w86rHbOSx+5N0woBbnPkvSaKmFMjK16Y84YoYk6pC9T/iRSbtqa8asyxsZAGj2mIHFFOFvXBa4hVCV5z+yOh4I3F0n9YzRtek9LltyS894SxhALVj1VAJIE9BgkXkZyLb8l57cljOV+5rbZ5aKHpojr/D1IKZA2kUOCOtcIO0J7wT26r5FVwH9OW3G7ZV6bxJUivuE1W3nlMyZtctAVuS2552UjieAHudWBJro4ssYjHGSuxsWzGlJqZXKohABWy0DH/c2f+NVsFxpVSs1vP6Ohco1GyMWjI8eVyST8FmlxzRSMUMrht8xyN2bUiuenAkEIuG0t9SXKUEjz3E3fxyZDN4SjWOedS+OXy8tTxRyZ44c2SN1pL/R1eQWma8pYH3QVaxgX94xZrcwoQMh+dTohg319u44Zhw7Rm+2i0v5dBILgUalOe2wrDFkBjWIkwOHse6oOR3NGpo6pQrQ/IsbTohUsht4+RG/nwCXMbuXlFsXz0U+cEcyyuex+bIL/DRVVzTFHI0POheB1ScI6sh7y9u7s+cRjqY1wYV2iTsDV/61Z2jbaS3Tbvd0AGC7+zzeLQ72636He8Qf2lX/CtFgRmivv8hsfKWmWyxQLbeS5kW8xDQ84ZD8AN+chbze3eO1ldr9/h/m3ozux+EwNuqSxDoY1hQ3KY4u9w3y+xDFatraTm/4TqGbe+80nfyTjnoXeT1fUangZrdET9w3JfLj2TP4b0yWcfvxZSwNp3D1hk9a/DCSWbYhholvOL+ZJeKWlszZqI4jRdI4VDEKgaF0ow7vvF6zl0qbwP1y+yzaKLWMjmJoVKGkuow+GBGfxDC+fodZjYlJ6CG/Ygomn5N+6P16wvTLSkwOf/GWh3O5oC7S81U7D9VWMKtr8TTMGOF/YUi3jXTsGfXZRHww09aE6W5zPwpAiG0Q4/3XTT5+cE0vPF0bdNs485e2VDhfjZXPU9+T0aniMOBGfX8yhmAbfKc1Rxdk+WFoVpGF5Xb+7AuX8BjaVF+Q==
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Mount Files"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/mounts/{mount_id}/files"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Mount Files
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"mount_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Mount Id"}},{"name":"path","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Path"}},{"name":"read","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Read"}},{"name":"order","in":"query","required":false,"schema":{"anyOf":[{"enum":["recent","name","path"],"type":"string"},{"type":"null"}],"title":"Order"}},{"name":"limit","in":"query","required":false,"schema":{"anyOf":[{"type":"integer","minimum":0},{"type":"null"}],"title":"Limit"}},{"name":"depth","in":"query","required":false,"schema":{"anyOf":[{"type":"integer","maximum":1,"minimum":1},{"type":"null"}],"title":"Depth"}},{"name":"with_counts","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"With Counts"}},{"name":"git_aware","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Git Aware"}},{"name":"include_gitignored","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Include Gitignored"}},{"name":"x-agenta-app-scope","in":"header","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"X-Agenta-App-Scope"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

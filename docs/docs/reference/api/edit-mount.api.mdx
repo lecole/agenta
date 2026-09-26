@@ -1,0 +1,71 @@
+---
+id: edit-mount
+title: "Edit Mount"
+description: "Edit Mount"
+sidebar_label: "Edit Mount"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV0tv4zYQ/ivGnFpAjrN5eFud6k1SbLBNa+TRS2AEY3FkcyuJWpLKxjX034shKUu2EydIE6CH5hKL5HycxzcznCVYnBmIb+FCVYU1MIlAlaTRSlWcC4iBhLR3OW9CBCVqzMmSZpElFJgTxOB276SACGQBMZRo5xCBpm+V1CQgtrqiCEwypxwhXoJdlCxnrJbFDCJIlc7RQgxV5VCstBkfcDr1zgXU9cTjkbGflFgwyCZ8ogpLheUtLMtMJs6GwVejCl5rby81W2glGf7ypm0te9OWgMXij9QZu650Ha1WiirLgBVs1P6dZesIBJlEy5LVeC3UaQeijkCKXUCbjtwFzE6NIM1c9DeMr6NGTE2/UmI3I/Krk+JTQbpVCIWQrCxm4w6iD9A65i7lrgN+ThbfA/+CcevnzDwT0j56qmXebaDP5BHRS09XqGvG0GRKVRhProP9ff63xg+4qpKEjEmrrHcZDsOrWZ00rA66y8LSjHTHxJOQ0oJSrDIL8T47vBFrPb6BqwktiTu0LySiQEt9K11CPB2QEw/bG3HcoCrFe1xy42HDJYIyeodLTj1suKRx13Rx93ap2zjr06Lns7jx15ve0nhrdUvjsDe9pXHX6pb/Zt01WTV7LdQVy75D7S614noUgvHSljr2UsHbhoyRqngmoDut8wgBD2dU2H+BNmL5gFVWulTm1WQYB3HmA9rtEvlc9T9lof9b5M7m16HgZgd8BPzZhrtqe75lHh0cbHfJPzGTwvXA3pnWSr++RQqyKDP+JS3l2yGGTCVruy9gYdNm60lrK2qNi46pvymvoIuemT2WvG0QjMGZ47A/8vRR54zeNe9yrSnKyrf/pmS4Be5I9qEDsxWHE/blw/PPHvaNVz+c68S/DZGP0NOuOPUh2EWMz9fX4y1Az491YvCTq3cRHjU52bni6YWtjvxAEsPAPW/MYNkMLDVwCdT3zTxT6YyPYSldUP3n3NrSxIMBVXtJpiqx54oc7qH0ByeMkVRa2oUDGY3Pv9DiM6EgDfHtpHvgirno2bV+bBURLOUXYh+F2WpU2bnS8m9PmTBgzb0UO4FZftkORmcPmJcZrQ02AWlFmXW/rZa5asNhij8dp8Oj/vHHDx/7R8fDg/70ME36B8nPw8N0OMQUh9AWxbbAtaXIxUYWqeryzxV27I3G51sKrG1xLmPSVdtvQ7QRjTYIEAHlLpPBEua/rHaYeBxaf83+3oe9fddXlLE5Fp0r1qiz8XgIYeGkGJQZSpe2TpVloFWYAQxEEK8m4UkEc2Us7y6XUzR0o7O65uVvFWkmyiSCe9QSp+yf2yUIafi3gDjFzNCWIqsqBz9chkT8sQfR4wo2ZCqYSfeYVfwFEfxFi+687srUvGHqMmyf+Jv6rpi04lu1lVPES4yShEq78+ykk5Tjm2uIYBrm+FwJFtH4nWsMfveaKme4yxS3toQMi1nF1TAGD8l//wDdbK29
+sidebar_class_name: "put api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Edit Mount"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/mounts/{mount_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Edit Mount
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"mount_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Mount Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"properties":{"mount":{"properties":{"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"flags":{"properties":{},"type":"object","title":"MountFlags"},"tags":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Meta"}},"type":"object","title":"MountEdit"}},"type":"object","required":["mount"],"title":"MountEditRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"mount":{"anyOf":[{"properties":{"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"project_id":{"type":"string","format":"uuid","title":"Project Id"},"session_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Session Id"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent Id"},"purpose":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Purpose"},"data":{"properties":{},"type":"object","title":"MountData"},"flags":{"properties":{},"type":"object","title":"MountFlags"},"tags":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Meta"}},"type":"object","required":["project_id"],"title":"Mount"},{"type":"null"}]}},"type":"object","title":"MountResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

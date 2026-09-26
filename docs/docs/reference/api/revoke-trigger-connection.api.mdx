@@ -1,0 +1,71 @@
+---
+id: revoke-trigger-connection
+title: "Revoke Connection"
+description: "Revoke Connection"
+sidebar_label: "Revoke Connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWE1v20YQ/SvCnBKAkVyjJ56q2g3iuqkFS+5FEIQROZI2WXKZ/TCiCvzvwexS/BBtxRGcU3uySc68mX3zdnZHe7C4MRDPYabFZkPawCICVZBGK1R+k0IMmh7VZ1raYLBMVJ5Twl8hggI1ZmTZL57vIceMIIbGZClSiEDkEEOBdgsRaPrihKYUYqsdRWCSLWUI8R7srmBnY7XINxDBWukMLcTgnEexwko2uKrRBzcplOWCQU2hckOGcS4vLvhPSibRovCJxjB1SULGrJ0c3FfGEHGilnLL5lgUUiR+1aNPhn32rdwKzZxYESIkygWnKmWRW9qQ7uTIFhGktEYnLcQXZdSixQfMd3drz1oXfC19RdoGmKaC3VBOOqaNRZXISilJmEMZHdPJb56GgUToxEnUb/7CFck/jcrf3TlbOPuWFxRQ1OoTJRaY68MSj62h7Fk3WeROyo73e79KdvkvrHZWLTYji2cutrWyI9V1Amer7ps2R99j5L2T3yEk2oOwlL3QC7XG3WkVdH1/jNSPTCZvK01oKV2iPUVcq5+kaOmdFRmdhL8KsIOxT8sV6c8I8hBgqyApSfoJQa4DbBXkQNdqx835ZXF8B34JWb/vfE9u+HrVKAe26igHwl41yoGuOko41V60J3tgf6MvTvc0Og/qugVRRmCk25wLNWXfMoLXIy0wVWj1KFLSy8+0e+pIp9xlfNlIVFYoIxS0e2S4X0wqiFuRe0jf5cJt5DnUOofGdHBLO087/t9wX63hXmNouMaidebUHUZTKjQldum0PFej9xXG4EFLKHuJ9oTTXAunIb8++FMozX103pVvX3p9sTYxXxjtWf/6UlqW7Pfr5WX/DvsPSpEGef+htdLnX2BTsih8ZSp1HRtIlXS+/sjuWJRHgmzdolRI0N+FzObUZv5IxuCGGoU+b+rJGMz4q28YLGw2r9tCpfTEfm3B9GpyxVx+tU9qra0S5iakX9m1dNGUKFToeSquQwlOieTDbDbpAQZ9dIVx7ye0wVV7MsvIbhWPb4Uy1k9qdgsxjKoxzoyaacSM9p2JrRyFkQ8iMKQfD8Od38swwkL4sofHrbWFiUcjcsNEKpcOcUO5xSGKYLhgjMRpYXceZDy5uaXdB8KUNMTzRdtgymoN+uua1TXDQtz6rVkNmmNnt0qLf7FatB80t8Gr9FpYq7YUxj65wXhyA8ccdj7xtsLEq+gQyX+G6GjZzWr5dMv8pgJLmP1Wf2ENMIchzMXwl+GFPyqVsRnmrRBPVfHo2lDRwDIdFRKF30hVjw0FnsOhwNAeOPkpPh7LqyovItiyRuI57PcrNPSgZVny6y+ONJdtEcEjaoErJnG+h1QY/j+FeI3SUC/NuivBm/tq47wdNMdUN/1DaXOu6yNKx08QgT/sj35K8L1lexDPvrIZJwkVtuXda4WssnpDTO6mMyjLb5bU1dk=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Revoke Connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/triggers/connections/{connection_id}/revoke"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Revoke Connection
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"connection_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Connection Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"connection":{"anyOf":[{"properties":{"flags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Flags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"provider_key":{"type":"string","enum":["composio"],"title":"TriggerProviderKind"},"integration_key":{"type":"string","title":"Integration Key"},"data":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Data"},"status":{"anyOf":[{"properties":{"redirect_url":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Redirect Url"}},"type":"object","title":"TriggerConnectionStatus"},{"type":"null"}]}},"type":"object","required":["provider_key","integration_key"],"title":"TriggerConnection"},{"type":"null"}]}},"type":"object","title":"TriggerConnectionResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
