@@ -1,0 +1,71 @@
+---
+id: upload-session-mount-file
+title: "Upload Session Mount File"
+description: "Upload Session Mount File"
+sidebar_label: "Upload Session Mount File"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVlGP2zYM/isBnzZAF2eHPflpWdeiQXdo0Fy3hyA48GwmUSdbrkQf6gb+7wUl27FzuXboUxKJ/Eh+H0nlBIwHD+kWNuS9tqWHnQJbkUPWtlzlkEJdGYv5g48GD4WtS37Ya0OgoEKHBTE5wThBiQVBCtFE56BAl5BChXwEBY4+19pRDim7mhT47EgFQnoCbirx8+x0eQAFe+sKZIldBxTWbMTgToBnqxzaVg3ROvQQ6XNNrpmE2qPxk1hYNu/3IdtpVEHsTsraGGh357hrCdHKiQCT5z9t3gjYZUmZLZlKlquiNqwrdJxINTc5cgh/TqRywjNr8vIrEHqFig7xjnKN9/EOq8roLAiU2IyJbzw7wmJE1BtBa1vVw9nHT5TxhJhtDDmqUop6eFntthVAR76ypY9J3y4W8pGTz5yuJCFIYVNnGXm/r83sQ2cME2bG+X/y4vMyLUHcK7RMlVHg9dcxfbpkOpAbGW7EQEFOe6wNQ7poFRDj4Wdb4rX4/ojhkP3uon9Fm3+dZqZy4Cdy+/vt7XM6/0Gj80DW7LVz1v08lzkxaiPfNFPhnxsYm01u/wcvPdHt7kwFOofNiPq/bUxQdCr84Xty3pH3eCAYwF42DWTMwki0Mv1VHQjpr1fhoFWQ8ZcRzCBTb/dKuPzCP5RSuInpd3YjWc8SRYVepuKvKMG1YL3J2/v79TPA2B/TxvgYJnXWLe5Z3I1v4l4uiI9WlndlPYc9LWMESTfWPglz7ZNTv6rbRGbcJ3H8QYEn99Sv9doZccZKB+njzyNz5dMkoXqeGVvnczxQyThHHQ13gpHVTnMTQJbr1Ttq3hLm5CDd7sYGG+nY2INTs0E3rPQ7Eia7pb+s+Wid/hobq9v+x+jVhn7Y23E7LENys+V6BZc8Tq5ktDALndRHCtegLso+VwsKqAiDBUxY/DHcSB8IhzHMYv7bfCFHIkmB5SjE95Sc5DrQIS2bVAZ1GKqQWb8rt9CLLH0QZAYF6ehNDkpLQVHrnYKjdEm6hdPpET19dKZt5Ti+piJerj0+mtF7+h8156f3CU0tWQXRn9Bpsb3ud1HOsMnglw/dsP06A3W9zL4VymYcs89lKDCsomPfZ6fu+lWMdBMWxtn92istPR6dlllGFY/Mn61bqXgYtvX7zT0oeOz+HBQ2Fx8BDrjq/FX6v22/AZQHPmo=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Upload Session Mount File"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/sessions/mounts/{mount_id}/files/upload"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Upload Session Mount File
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"mount_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Mount Id"}},{"name":"path","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Path"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"multipart/form-data":{"schema":{"properties":{"file":{"type":"string","contentMediaType":"application/octet-stream","title":"File"}},"type":"object","required":["file"],"title":"Body_upload_session_mount_file"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"path":{"type":"string","title":"Path"},"size":{"type":"integer","title":"Size","default":0},"etag":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Etag"}},"type":"object","required":["path"],"title":"MountFileWrittenResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: delete-mount-file
+title: "Delete Mount File"
+description: "Delete Mount File"
+sidebar_label: "Delete Mount File"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VV1v1DoQ/SureeJK2Q8qnvLEihaxgoqKFoRUrZCbTDYGJzb2uOqy8n9HYyfZpC3lost96tY+mTM+Z3x8ABI7B/k1nGvfkoNtBtqgFSR1uykhhxIVEn5pePtLJRVCBkZY0SCh5S8P0IoGIYcEkSVkIFvIwQiqIQOL3720WEJO1mMGrqixEZAfgPaGv3NkZbuDDCptG0GQg/exCklSDIitzTYlhJANbF31yPTdo93/EVVf+oKrjMvKat4IKobSNYoS7aR2JZSbFBft/n0VlZjScNlupfVKQdgeiTfV/DzyjMnv5mKHLYm5MGbuCm3w/27j83ydGNfGzC8jY+B9i87o1qHjwierFf8p0RVWGp4MyOHSFwU6V3k1+9CBIYNCt4QtxXaMUbKIg7T86vibw6hZY3nMSCaGNGTlU06ddpDAJD5RdFjZEu6iOj34VURkUGIlvCLIVyFkPVzffMWCJlpeDx1s743da6mwox6OGQJXe3Fy8lCVT0LJMp55dmattv9FEhJS8S9J2LiHAKWLye6/sL8XKmyPaghrxX4k3TudGmShG7d7ypJzdE7sEIZiv4ZGMWZXvBt4pI1PBva3IS6wtXQ3KjM4dfS1Jbwj+J2brE1qv8ONbD1alBz6tRSnyYLHyHrIm6uriwcF03xMByPN0CxF2esUow1SrY8ZG4OVashhGaPULQ99pIYlJ6+DDBza2z53vVUMFkZGk9O/NZFx+XKJflEo7ctFipSFkAm45RqFt5L2scj6YvMW929SvuTX2zHgkmczTdsUNjgkjHyLrFmXYGtPtbbyRxqhaXiF6Hylx8an9JmtLzZwX7HJFl8iUcSZ6ZniNmT3jn08LWSATbxCQCial8MOO84aJprV4vlixUtGO2pEO6J4zLNJj4MMPJRLo4SM1yZ2dOjMvE7vInuXj17I5Oc2g1o7YtThcCMcfrQqBF5OTxobVEonbtQo8e+1MOQLPPvQXYF/ZpA93to33B/fzluhPEPiUNwKK5nn73P2o9Lux5x9L4MmMZTqfg7/pIenDzt60Y8Hzv5e/Ucf7QlTwq2LAg2N9h68BmzDkAmnZ+/Ors4ghJ9H/0Fx
+sidebar_class_name: "delete api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Mount File"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/mounts/{mount_id}/files"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete Mount File
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"mount_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Mount Id"}},{"name":"path","in":"query","required":true,"schema":{"type":"string","title":"Path"}},{"name":"if-match","in":"header","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"If-Match"}},{"name":"x-agenta-app-scope","in":"header","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"X-Agenta-App-Scope"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"deleted":{"type":"string","title":"Deleted"},"count":{"type":"integer","title":"Count","default":0}},"type":"object","required":["deleted"],"title":"MountFileDeletedResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
