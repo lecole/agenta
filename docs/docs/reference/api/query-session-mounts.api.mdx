@@ -1,0 +1,71 @@
+---
+id: query-session-mounts
+title: "Query Session Mounts"
+description: "Query Session Mounts"
+sidebar_label: "Query Session Mounts"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFWNtu2zgQ/RVjnuVLnFurp3WTLmq0abyJuwtsYAS0NLbZpUSVpJJ4Df37YkjdfFMSI8HmJTA1c2Z0eDic0QoMm2vw7+AWteYy1jDxQCaomOEyHobgw68U1fJeu+f3kUxjo8GDhCkWoUFF7iuIWYTgQ2HGQ/CAx4U7eKDwV8oVhuDPmNDogQ4WGDHwV8Di5fXMophlYlGM4vEcMq9ciVMhIJt4YLgRtJDn2xqGkJFdHp/HgUhDvGcqWPAHfE0WeaSplAJZDB6EOGOpMKVpEXroYrQGRYyMEiNk1OaTDJeEVgUyKkUPAhkbjI193SQRPLAEd39qGdNalUaiiH7DUdMvS/c6R+sGNcL9Tf52s+UBm2Nsco9DuB+Qf461RfguJvcyt0lylnmFt5z+xMCsbdld/W23tXBFXP1hN3o7+8yDRx6H8pFeroHPGB9RmyZmPJhJFTEDPoTMYNvwCBvp+u4gMw+kCN8a/NpBZh7E+PRS6DTl4TMpP1lMwSO+G5THBueoGlG+WW96bxWias4N4zSiHWY6wDh0ayGWPyaNHFh4K0aD6oGJgzMeFgCZB4oZ3AkUp9H0GZwb8t0l5sLgr1KLO6Ta4Lcl9RtXdiDLyE2hTmSsnZT7vR79IxYVT6jcEEAaBKj1LBWtm9wYDq5OQVGdNiiu8r2wFrVj3ss8yO8QfwXcYKR34CpkBsN79rZn5cLBtgZWlGkSvkeQHw42DxKiwHcIculg8yAFXdPlM0X9NSWgIOvTMq/0BV9vGqVgq4xSEPamUQq6yiiuWzjs9vvO7Oasn6vDoC5rEJkHWqTzQ6FuyZdK4JuR5phKlKQStKe/WEerfEfOK2f7/+5RklQlUh+84aPcnfacme0y2FCubZ2+JKfMg5mwvfYrvX+3XmSVe1evwMKQk3aYGNUQXb+5jtn0euMcP0LD3gP/inCfa+xqMvNe0OVBBceUYstN0nTj5VtH0uUt6G7Qk35/+9L8kwke2iux9VkpqQ6/MUM0jIuGq0/IYO3pCwRbNjaT/ax8ky5Bu9F63nQOr1BrNseK4v2mlozWmJ7a7itJXTdQdlO0QBeUearBbO3HBXFJDeczIiFuXPq5XU0d1Ra5HdpPxaXbgiaBfBmPR1uATh/rwrAtWKuoXFfFbByhWUianROpjZ2VzQJ86ObC1l3XAXWLqVSjeigG6VQJMmUJt3vsfi6MSbTf7WLaCYRMw44tj6zDuDOcEEaQKm6WFmQwGn7F5Rdktu++m9QNbkmaTmzrZuUGsYR/RcorH6oHqVlIxf91Cson6oXzIk5I9DfV+Pv5iUWJwLXxtX4FVDqqiny1tj1QuslwY34r5jTo9/on7d55u/9xfHTqnx75/Q+d3vnR31CNW002bmqC4xn7cDo7O2mfnh+dt09Oz/rt6fEsaPeDj2fHs7MzNmNnUM5DvXKkWZtXqvGjV4wPvcwejJmsnwt7N7HWYDSETUGtPaIawwLLX7ET9jF4G7Ko1ECTVGQrDBhk0W/lEzoQpDEXptc56vTs1Si1iVhcC7FH0hvdTq4UOrbdRDBuC4tNapWrvRzW7YEoYJziJx4s6GT4d7BaTZnGH0pkGS275yThkGs2FbUvNf/gcvMD0wMTKaVhT8oehx1fhCq3Cf1QnPzsMfEKWVMGzv/CFfq2rXKV71bRpxScxyAIMDGNtpNajRhd347Bg2n+4SiSIfko9kjVjz1SnvRJzlgq6csSra1AsHieUp32wWHS33+8K7ex
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Query Session Mounts"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/sessions/mounts/query"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Query Session Mounts
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"session_id","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Session Id"}},{"name":"include_archived","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Include Archived"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"properties":{"mount":{"anyOf":[{"properties":{"session_id":{"type":"string","title":"Session Id"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent Id"},"include_archived":{"type":"boolean","title":"Include Archived","default":false}},"type":"object","required":["session_id"],"title":"SessionMountQuery"},{"type":"null"}]},"windowing":{"anyOf":[{"properties":{"newest":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Newest"},"oldest":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Oldest"},"next":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Next"},"limit":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Limit"},"order":{"anyOf":[{"type":"string","enum":["ascending","descending"]},{"type":"null"}],"title":"Order"},"interval":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Interval"},"rate":{"anyOf":[{"type":"number"},{"type":"null"}],"title":"Rate"}},"type":"object","title":"Windowing"},{"type":"null"}]}},"type":"object","title":"SessionMountQueryRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"mounts":{"items":{"properties":{"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"project_id":{"type":"string","format":"uuid","title":"Project Id"},"session_id":{"type":"string","title":"Session Id"},"agent_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Agent Id"},"purpose":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Purpose"},"data":{"properties":{},"type":"object","title":"MountData"},"flags":{"properties":{},"type":"object","title":"MountFlags"},"tags":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Meta"}},"type":"object","required":["project_id","session_id"],"title":"SessionMount"},"type":"array","title":"Mounts"}},"type":"object","title":"SessionMountsResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
