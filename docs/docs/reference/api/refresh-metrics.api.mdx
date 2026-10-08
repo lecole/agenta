@@ -1,0 +1,71 @@
+---
+id: refresh-metrics
+title: "Refresh Metrics"
+description: "Refresh Metrics"
+sidebar_label: "Refresh Metrics"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWFlvGkkQ/iuonnalwWDiI5mndZxE8SaRLZvkYRGKipkCOttzpA8nBPHfV9U9J9gYW/hhtesXMz1VX3UdX3VNL8HgTEM4gre3KC0akaUaxgFkOSn3dBFDCIqmivT8a0JGiUhDAIq+W9LmdRYvIFxClKWGUsM/Mc+liJxu75vOUl7T0ZwS5F+5YmQjSPNTibfxQqSG1C1KB5guLqcQjpZgFjlB6F7OSMEqqJZSKyWsxgEYYSQvXJQAK15LSBtM8jvRtFEinUEA00wlaCCEGA11WWmrhWGF2jSh2zaEocQt7WSslEKlcLGbcc1qOqIUlci+inhHF60V8VYDNwVk5yJes/BoDwtbuzvXsO3cUzbdo2fXNi2c8rjP74+3qGFVK2WTbxQZqGVq+n3ynLj2lLtTicknFMXM25JC44exrj1nYcWYNYZRltyCzrNUe/4N+n3+F5OOlMgZivNio4i0nlrZuS6EIXgq9aPMeqU1UtdunDuJAGKaopUGwv4qaHaMKlNt4Kl0Ha2ZU4xjwZtCedUS3SinSZZJwrSZzSL/vHI3DERCRVai+u0jTkj+qbO0e2lNbs3vsJ66ZlWsS8NGorfV1DvnJav8F7wdFs4mZPCJzjY823aMJJP2SjNGD0XknZUPBCSoqnYXrYc7y5ru44L6iYO5CiBShIbir2j2ej6ee9jOmduWzePnMPLZwxZGYpL0DEbeeNjCSBmuyWKPh1IZrNeL4mwq47VXK2W0KitlwPZqpQxXZWV/0B7vlpQW/nTZgeYbIF8KdR5rDBq7tV8EQKlN+KDNKY39yndLlmJwA0Tql7Q/GtkZFNIqPhhJqUzxUoRpRFJSfPchfeM3cdeWq6Ovss5Jw/+b4N6a4Bv0TfDf9sHx/CN/PXVvh9ycrB+YWAvgbQPrxnjdOrWKT9CKHKPxIyfrYnZduUH4aDDYHHW/oBSxU+q8ZRo/fc6NyaCQW+ZVmUWtt48h7fj+OH3M/Abd2KRnd+WxDqnWOGt8gN4v6oLRGfJbRxrmG4tXJCgIGJmfDZiNnJxzLH+aB0uFY+O3X8g123iVIp+h+0PxxqdgW5G8Hw6vNgB9fbQLo/iU6tRlmJCZZ3xJkmeaIXM0cwihR/WFSq/4aukV9yh8YJDiY8zl2SrJCpgLl2T/ODcm12GvR/YgkpmND3BGqcEDFF5wzBiRVcIsHMjZ1cUHWrwnjEk5SjQEbrg2fbW1xaoMYS4+EMcsxYSfz6yZZ0r88iXEmeYteS0OClf9dX0F9PYnJrmktSuduqf2Wz0RBv3BUbd/2h28Gh4eh8eH4eDlQf/08C9oX6SM7hccr3VAeDHFl8fTk6Pu8enhaffo+GTQnbyYRt1B9OrkxfTkBKd4Auv3GKPd1MZ1M9zVTnW1sKuJlaPTNGuy6cxlvHN2dQHrZdh6xZ0JI0fEMn3uNQRrtVSXEI8nietLYAiTP6o3rfkK+geHB31e4tpOMG2Y2CRCa4dVZTHPe7lE4TqR28+y4MgIGhyB+ts+KO8bOfJzZlU4guVygpo+K7la8fJ3S4oLfxzALSqBE47YiPvhvKTAEv6mRdlsUtN1XYvFpfUlv9bEmXte4yyKKDdbZccN4l9d3gwhgElxF5pkMeso/MGe4A8IAfhC1bsZLv3aEiSmM8t9NwSPyX//AFDWTv0=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Refresh Metrics"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/evaluations/metrics/refresh"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Refresh Metrics
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"metrics":{"properties":{"interval":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Interval"},"timestamp":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Timestamp"},"timestamps":{"anyOf":[{"items":{"type":"string","format":"date-time"},"type":"array"},{"type":"null"}],"title":"Timestamps"},"scenario_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Scenario Id"},"scenario_ids":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"type":"null"}],"title":"Scenario Ids"},"run_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Run Id"},"run_ids":{"anyOf":[{"items":{"type":"string","format":"uuid"},"type":"array"},{"type":"null"}],"title":"Run Ids"}},"type":"object","title":"EvaluationMetricsRefresh"}},"type":"object","required":["metrics"],"title":"EvaluationMetricsRefreshRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"metrics":{"items":{"properties":{"flags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Flags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"status":{"anyOf":[{"type":"string","enum":["pending","queued","running","success","failure","errors","cancelled"],"title":"EvaluationStatus"},{"type":"null"}],"default":"pending"},"data":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Data"},"interval":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Interval"},"timestamp":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Timestamp"},"scenario_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Scenario Id"},"run_id":{"type":"string","format":"uuid","title":"Run Id"}},"type":"object","required":["run_id"],"title":"EvaluationMetrics"},"type":"array","title":"Metrics","default":[]}},"type":"object","title":"EvaluationMetricsResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
