@@ -1,0 +1,71 @@
+---
+id: get-record-event
+title: "Get Record Event"
+description: "Get Record Event"
+sidebar_label: "Get Record Event"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1V9tuG0cM/RWB6EMKrC3FKAp0n6okbiKkRRXb6YugGtQuJU26N89wDKuL/feCM3u1LnYN58mrHfKQc3hIrktg3BgIF3BNxqg8M7AMIC9II6s8m8UQwob4VlOU6/iW7iljCKBAjSkxaXEtIcOUIITaSMUQgMoghAJ5CwFourNKUwwha0sBmGhLKUJYAu8KcTSsVbaBANa5TpEhBGsdCitOxODKIY9mMVTVUgBNkWeGjGBcTCbyJyYTaVVI1hDCtY0iMmZtk9FVbQwBRHnGcoGwBCyKREXukuNvRnzKXl6FFgpY+Qj+Xs4r2/25dlceWkSakCm+RR5aHb1fjExnrFKCKmjNMpskIPdrrv3ew46mDFUAtoi/R5CvHrYOElNC3yHIBw9bB2noWu1ELM+L4xTxHLLe7ZxOOr5eNUrDVhulIexVozR0tVG61npZ1wRgfH8fgWhc6ilQ+xQ6/0YR/8+wc+/Vxr2zlEV0kBqVMW1In+TiugHo0ZDF9PBiwIYWB1LJ+5QMY1q8quJvWtQub297PMgzsr6R4w7R5FYf4fb5mNcepAoAmbVaWfZTrYPEOFYyKjGZ9+aen+Y1eL6Sop8MN+3QhXarsyda5iS/VjcyNQU+hSQri5m07Ia/F5OzX/BsPT37bVm+/bn64bT8Cmzi3FnUmLHKXn8+fumg3YysHvPa36KLwabtNfagY5d7Xe3LfSCPQ+EO+ra7tKrE56eLi/3V+xcmKnaLdXSpda5fvndjYlSJPCmm1OwbJHk0OH2GjtoBsezujFrjrnfl33OfoNQ8NZtT8/IPMgY3rnea5j5m6sho+1dlhXWENMcz90KWIz/0YPbq8V64fHhaIsKNT7+26+mhK5Gv0HEqPvgSnBLIp5ub+R6g18dQGB+JR/XEuay/I1PibV5/Y/oe3UII41rSZux1bsZlK/jKKV7fN5+eVifigYVyVfY/t8yFCcdjsudRktv4HDeUMZ6j8oZLwYisVrxzINP57DPtPhHGpCFcLPsG1yJOL7ehWVsiLNRnEtLqz+Cp5W2u1b9eQ/Wn8NZ7Va7067xf+alLbjSdz+AxZYMj6SKMnGiaSO4YgkfX7m4LAVDqegiYMP21PZGSC4c+zOT87fnELfzccIpZL8SBog1SbFkQUY6LBJVrG5dQWRd00cwoA83ikqewm2LLALa5YTEtyxUa+qqTqpLXd5a0FGkZwD1qhSuhbFFCrIw8xxCuMTG0l1U7cuDNVd0VP44gOJxtU8hMqniPiZVfEMA/tBv8W+OGxraRSVmfT6OICu557s040VMr9Y+XN1BV/wEP1ZNV
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Record Event"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/sessions/records/{record_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Record Event
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"record_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Record Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"record":{"anyOf":[{"properties":{"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"record_id":{"type":"string","format":"uuid","title":"Record Id"},"session_id":{"type":"string","title":"Session Id"},"project_id":{"type":"string","format":"uuid","title":"Project Id"},"sequence":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Sequence"},"record_index":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Record Index"},"timestamp":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Timestamp"},"record_type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Record Type"},"record_source":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Record Source"},"attributes":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Attributes"},"turn_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Turn Id"},"span_id":{"anyOf":[{"type":"string","pattern":"^[0-9a-fA-F]{16}$"},{"type":"null"}],"title":"Span Id"},"quarantined_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Quarantined At"}},"type":"object","required":["record_id","session_id","project_id"],"title":"SessionRecord"},{"type":"null"}]}},"type":"object","title":"SessionRecordResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

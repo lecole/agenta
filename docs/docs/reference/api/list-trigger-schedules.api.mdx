@@ -1,0 +1,63 @@
+---
+id: list-trigger-schedules
+title: "List Schedules"
+description: "List Schedules"
+sidebar_label: "List Schedules"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1WN9TGzcQ/lc0emnCHDbto6eTqRugdUkTBkhfwOORT3tnBZ10kfZMrp773zur++HzAYZQwkvgtPt9u9+utFI2HEXq+eSaXzmVpuA8n0fc5uAEKmtmkk+4Vh4XWC8vfLwCWWjwPOIOfG6NB88nG/7L0RH9I8HHTuXkzCf8sohj8D4pNLtojHnEY2sQDJK5yHOt4sA1/uLJZ8OJIhP0W+4oElQ1Q2yL2gnLHPiEK4OQguMRR4WavrwPFhGXkIhCI58cVRHfRjzZcIWQ+fvQiQ4qDD8rvxAxqjX0WJfWahCmxzrzbFpb9ZjRFVBVUetll18gxp5TI/dlE9xpCIDsm0CEKT8lfHK94UJKRfoIfb4T3NZiEFkVdZ88OmXS8OVhGB4rFxdauDcfxBL0X96aw08F5gW+5cPgq/k2/KE1v5dqLwpTaL3jfdUkmwGKFybby2zQDjvE2XL3S1+jpxQ5LfQTgkRdQz3HSzgnyr26DHy/T9S/Scwq4kZk8EzJ7mF8JN8q2t3FL4M67kFUEY8dCAS5ELgPMOKJdRnZcCkQDlGFeB5neV/DsmkQq8jljyD5XMM2JBI0/ACS4xq2IWnlWpYLJZ/JUxRKPkus30s2k329XpWlVatjaQV7VZZWro7l9aCbqAU+MINgDQYXt1D2JkJH0QKckBE7A9rs3fjZ59BOgWCPwuEitMtrttclwbKr2oyDka9PcWJkR6BMXqBfJAq0fNY8o3m557R7xoEzC5TstKas6HqSgAMTDyfIYzNmt9JrcP5/HH//NO5UUV2kL4W5JN9X7+4995KLVrTvGz4XW60pY9AQo3W7Me/q2+yhl4jS7Kxc4OqlEOfku0+HyzaFaHilbRZYYh2Db+johmhS5nOIVaJiRgcHS5zNGBhUlO7oxtyYcy1ikExoa1KvJLBOsoAUvFo4a2qAroPlLlbd45Mbc8gODm6hPDiYsFMKx6yVsyaj48fBWlEHemaNLkfso1irVCB4hjawjbb7Y/TrLZTvohvDWGK1tnee4QpqzpLllq5WlHBhJC04YG9glI7YnXW3ibZ3i5bsbcQSwHhFLCuBBFiDRORnWLjug2dUOiZSoYxHptDXAdX50BoldGyRGYvhbVA7KIM2BObAW71uVSl/6vwZmyXsFkqmPPOAUUPUsDbeHmJrpHDlXndj8QEIqRzEqEvWRbJboQ7sge57qN0cfC2UA0kvsO1s6U2N+aNPhmMaUE9hhin2OEZvk9e30/szye/dJgM8373yKvoZ7p0PyiO77L0gM8CVpTdmCoRa72g+bh6bfty93cakCTg6lMNOL5wmQ5GrIHT95wox95PxGIpRrG0hRyIFg2IkVG04J4y4cArLADI9n51B+ScICY5Prud9A4oyq0+qXbOuqiJXZ6FW9YWbTwtcWaf+DQ3LaQRSSLVXFUZiYoN7I900BMem57N7Z8zOEr2WRRwumy1TWObRIO1ttjzikAlFiwgi+61boXp3g40fjX4eHYWT1HrMhOlR3KvU4EXQaIDwDce5FioMuhDOpqniNW+ryPtv8IhTO66sRzLZbJbCw2enq4o+fy3AUWnmEV8Lp8SShLqeV1GrI1UtDA4+jWPIqWfWQhd1OQb/k0DV7Prrj5MrXlX/AYGM0gA=
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List Schedules"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/triggers/schedules/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+List Schedules
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"schedules":{"items":{"properties":{"flags":{"properties":{"is_active":{"type":"boolean","title":"Is Active","default":true}},"type":"object","title":"TriggerScheduleFlags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"data":{"properties":{"event_key":{"type":"string","title":"Event Key"},"schedule":{"type":"string","title":"Schedule"},"start_time":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Start Time"},"end_time":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"End Time"},"inputs_fields":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"string"},{"type":"null"}],"title":"Inputs Fields"},"references":{"anyOf":[{"additionalProperties":{"properties":{"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"}},"type":"object","title":"Reference"},"type":"object"},{"type":"null"}],"title":"References"},"selector":{"anyOf":[{"properties":{"key":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Key"},"path":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Path"}},"type":"object","title":"Selector","description":"Selector for extracting specific data from entities.\n\nPlaced alongside Reference for data extraction from referenced entities.\n\nFields:\n- **key**: For environment revisions only. Navigates to data.references.<key>,\n  follows the entity pointer found there (e.g. workflow_revision), fetches that\n  entity, then applies path against its data.\n- **path**: Dot notation path into the resolved entity's data.\n  If key is set, path applies to the secondary entity's data.\n  If key is not set, path applies directly to the referenced entity's data."},{"type":"null"}]}},"type":"object","required":["event_key","schedule"],"title":"TriggerScheduleData"}},"type":"object","required":["data"],"title":"TriggerSchedule"},"type":"array","title":"Schedules"}},"type":"object","title":"TriggerSchedulesResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
