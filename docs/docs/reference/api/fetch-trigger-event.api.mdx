@@ -1,0 +1,71 @@
+---
+id: fetch-trigger-event
+title: "Get Event"
+description: "Get Event"
+sidebar_label: "Get Event"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vk2P2zYQ/SvGnBqAsJxFTzrV2CySxaatkbi9GMaCS40lprKokJQRV+B/L4akvqxdt1ikOdkiOe8NZ97MsAXLcwPpDrZa5jlqA3sGqkbNrVTVfQYpHNCK4tGG/Uc8YWWBQc01P6Ili3TXQsWPCCnUWp1khvrxLzwDA1nRGrcFMND4tZEaM0itbpCBEQUeOaQt2HNNtsZqWeXAwEpb0sImgi0e8AzOsZ5FVhbz4OF3Ibof8GZc/r7fheWOkCL+ngBMrSqDhmxuViv6ydAILWtyBFL43AiBxhyacvEpHgYGQlWWUpC2wOu6lML7nXwxZNOO/Kg15dHKwCBUE4yiez6GqEf+3foTDDI88Ka0kK4cC9f3XNX594NP9RSXInPl0v66LAbz5WO/0b5j0wCMSaeGlJ+4UjVlCRTPDurdCMKxXpGvhetESFgj3b0WbiQ1QhTcYq50jKW0eDTzMDnWLXCt+XmcssHcMShVrl7r10eyJaJY5kJVB5lP0XiWSXKcl5uRBIL8I656+oLCXmWKjWZxGxgoRfxcKp79H2SbCO3cpdW4gncQ6turdO7qLbe8VLmv33douSzNM6TPUVwB6ivaObL8+eZm3gD+5KXMQlu601rp11d/5t2eaGx6oFRisvsfNNR1ELd/WaAflei1fjT5tRbwKxrDcxzUfqWTUjAWW9r1VVk3obP1NUYLVF322whmlpVbiuU3+6/ioNgE9+O5kUSGFIUMvRyKoJxnybojH7bbzQww6GMqjPdoF3dxEB/RFormdI5hLtsCUkhiIZtEBNElXSM0STue0i4ZdTWTtBez1SV+Apik7QehAwYG9akb/Y0uiZDX0qsjfBbW1iZNEmyWolRNtuQ5VpYvuQwH94QhGi3t2YOsN/cPeP6A3Lfq3X584DOJOsh0eqxPLa/lw1DBKawbWygt/w7ai4O7CFbOS+agxopZe+cW6809XIZ6skXVx4UXW8fkt4FdXHu4LTDAo689sMiPv/Q7JBWKYaBZLd8uV74ZKmOPvBpRjJN9MR/j9UnFSV1y6evMe9JGIey6jm7ATxuSAgxTkVbT2aNt0ANtz19bQRK0N7yO9gwKZSwxtu0TN/iHLp2j5a8NakrynsGJa8mfKOS7FjJp6H8G6YGXBmeX61sd/PQpVuObBbDnL90JoSL/Trxs6AtYeJ5Mn6Uk0h/IfRm+H0w/ZMj36aKrsPhyg7UQWNuR5WysUCn2Teb93Rac+wdkIzAU
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Event"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/triggers/catalog/providers/{provider_key}/integrations/{integration_key}/events/{event_key}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Event
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"provider_key","in":"path","required":true,"schema":{"type":"string","title":"Provider Key"}},{"name":"integration_key","in":"path","required":true,"schema":{"type":"string","title":"Integration Key"}},{"name":"event_key","in":"path","required":true,"schema":{"type":"string","title":"Event Key"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"event":{"anyOf":[{"properties":{"key":{"type":"string","title":"Key"},"name":{"type":"string","title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"provider":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Provider"},"integration":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Integration"},"categories":{"items":{"type":"string"},"type":"array","title":"Categories"},"logo":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Logo"},"trigger_config":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Trigger Config"},"payload":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Payload"}},"type":"object","required":["key","name"],"title":"TriggerCatalogEventDetails"},{"type":"null"}]}},"type":"object","title":"TriggerCatalogEventResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

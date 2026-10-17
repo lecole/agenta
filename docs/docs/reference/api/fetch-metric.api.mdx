@@ -1,0 +1,71 @@
+---
+id: fetch-metric
+title: "Fetch Metric"
+description: "Fetch Metric"
+sidebar_label: "Fetch Metric"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtv2zgQ/ivGnFpAjbPBnnRabx7bbBs0SNxeDCMYU2ObXYpS+AjqNfTfiyElWbIdJy3c0+4pETnzzfCbB4deg8OFhXQCl0+oPDpZaAvTBIqSTPi6ziCFOTmxfMjJGSkggRIN5uTIsOYaNOYEKcRt+yAzSEBqSKFEt4QEDD16aSiD1BlPCVixpBwhXYNblaxpnZF6AQnMC5OjgxS8DyhOOsUCNxF6cJ1BVU0Z0ZaFtmQZ5Oz0lP9kZIWRJfsMKdx7IcjauVeDu1oYEhCFdqQdi2NZKinCEYdfLeusO46VhglwMloQhY9Ktb9SO1qQ6Th4HiQSyGiOXjlIT6ukIYQVpaPc7gLPVWB/DahXn+aBTMwyyU6huu2JbiRqJ2ZFoQg1VMk2j7yyHwaENMIrNG8+4ozU37bQ7z55V3r3lg8TUYrZVxIOmOfmeNvSUO1Ib7zQXqme9lU4Jav8F047rg+bk8OfPGznZFsZ1zOcz/orXY5eYuTKqxcISdqsfY0WGoOrw1nQ1/0xUm+YzCoBYQgdZQ/oDhHXaSQZOnrnZE4H4c8j7GAU3PJl9iuMfI6wtZGMFP0CIxcRtjbS0DVbcVd+nZ3Qel9D1p+r0I83fB3VSsNWa6Uh7KhWGrpaK8eDjnhPZKyMt8srynwH5EutXiVgHTp/sF8kQNrnfJmXpLO48ujJE1+lxmsdl2y8GvkwKJU3fDGSMYXhJYFakFKUQceLzWxwH53Y53J79bXWOWj4fxM8WhO8wNgEmQfzhGovbXtJ2k7NBoDNy5ysw7w8ahsat6icuYI0GlkcsW7va8i6ao3XNfhrJ8o7r+M0uR2A7rg6aYD31kI9lHZiGOO/M7Z258LJdJ/JZ8Hb2bWqWO/3s7PdUfcLKpkFpcEll/HPz7kZOZTqwLyqCtHb/ZGinT7P08ciOhjGJrvYF8cNpdbigjakPy8ayBiMeTcUDdcbi7dFUBegcN86MDsxOWcuv7kXU4W5ie7Xct023oYoRuh5Ki5iCA4lyfvx+HYHMOZHPzGu+NU2uGlebTm5ZcGvuQW58IhzS0hhSJuH37B+sQzXm7dcxTcGmafmseeNYi0sZYhy/Fw6V9p0OCR/IlThsxNckHZ4gjIKThlDeCPdKoCMbq8/0Oo9YUYm1ERH4J6TM6ZbX6wNEZbyAzFp9cNz5N2yMPLfmEP123MZtaoQ+nnRjfwoODcY3V7DNmW9La4iFCFpGkthG5KtY29Oy1dpHmoIHGH+R7vTmwXg9OS3k1NeKgvrctQdE1tB67nXMsAJOSwVylAywZl1HdAJdAIKm0doAmnngT5NYFlY7kewXs/Q0mejqoqXHz0ZDtI0gSc0EmdM2WQNmbT8fwbpHJWlHc/algNv7uqqeDvYXI19j5tAao4iu8tfkMA/tOr/kBC6xrLJk3UtMBKCStdR3WlynFBtvv91OYaq+g4lxsdN
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Fetch Metric"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/evaluations/metrics/{metrics_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Fetch Metric
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"metrics_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Metrics Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"metrics":{"items":{"properties":{"flags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Flags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"status":{"anyOf":[{"type":"string","enum":["pending","queued","running","success","failure","errors","cancelled"],"title":"EvaluationStatus"},{"type":"null"}],"default":"pending"},"data":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Data"},"interval":{"anyOf":[{"type":"integer"},{"type":"null"}],"title":"Interval"},"timestamp":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Timestamp"},"scenario_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Scenario Id"},"run_id":{"type":"string","format":"uuid","title":"Run Id"}},"type":"object","required":["run_id"],"title":"EvaluationMetrics"},"type":"array","title":"Metrics","default":[]}},"type":"object","title":"EvaluationMetricsResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

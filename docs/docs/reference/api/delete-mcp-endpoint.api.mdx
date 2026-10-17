@@ -1,0 +1,77 @@
+---
+id: delete-mcp-endpoint
+title: "Delete Endpoint"
+description: "Delete a connection."
+sidebar_label: "Delete Endpoint"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVU1vGzcQ/SvEXNoCW8k1fKlOFWKhNhKjRuL2YhkKTY60jLnDDTlrRRH2vxfD3bVWkX3vobpI4rz5fjOzB9abBLN7+FMzbvVupm7e3cJDARaTia5mFwhmcIkeGZVWJhChkdfJkpY0Hx5UKhFZ6UdNNpCjjeISVQxb5VhV2qJKSDapzzWSdbRZ6YbLVRUsfi4yVH4qx0vK4BdlKpReM0YxYzQZ9B6tcpxU2JJKbkO/OpqouwGfRJWUzfFaFcjvlrQtnRfjIk7svFeOFJeaO69bx6WioExEi8ROe/UYGrJKk5X33osorb3blFwsyaJxFq1qyGLM4R4q81NSPpiniZrnmLIjTYFLQepHxSE8qfCMUSVHBgsVonJpSeJHKudIBSok2CesuchhiAdNaSuVSOri7PcJFBBqjFo8XluYQZfzqjL1CsnWwRFDAbWOukLGKF3eA+kKYQYDYOUsFOCkxbXmEgqI+LVxES3MODZYQDIlVhpme+BdLaqJo6MNFLAOsdIMM2iabIUdewEsetvq2kLbFi8+Tzo/eP7aYNwduV5rn458a9r9tc4J/BgFUlMJf4OYhQJ07VZPKOYoEAqTh7h6hs8bLj+JYfF/zPKr3C1Umw6pxKQQwmjGpDgoTaqpE0fU1QQktT4aaryHduTrtstViTN1I7m2Io6Y6kAJk+R0fnYhX8chfGqMwZTWjVcfezC0BVycn59i/9He2dx/tYgxRCjABGIkziWray+Ru0DTL0kU9qOC1lHIw64LxSJr5+WXY6zSKcAHcyR9qx+jmjhi3GCE9qEthjcdo96NqPIhdAFKilXavMayAXqDKelNLkYHeRuai6HuRNoKxeomF2QQX+eHtgDD30ZmwuMXNDwy805q+Y2FwyeYA1Xvc2268HvciAeHFnUdersUl10LXnM2QK7u7m5PDMqngAq5DIclkOeeS5jBtOdymlamTtNh7tN0P1oBLRSQMD4PS6KJXlR17XJDu78lc51m0yk2E+NDYyd6g8R6ol0HfBAbpomOd9nI/Pb6Pe6uUFuMMLt/GAO6+ctMOoa9dEPX7n03xd3ykEEK0X3v6NIvjrLTanOX12Hc5HkOTs1vr0+m/EgkA6NN5sfgKYuh+CHtQ7aydKo8LsCoqz9eJNJdqWHn5mzy2+RMnuqQuNI0ctFf08VhSx9FuD+M8f+H9z95eHuSynqY1l67vMAyX/b94N3DMHiyG0yd8qnqhw8KmI0v8EMBZUgsWvv9o074d/RtK8/daZRxsi7pRz86jnLkXj+qz9o3El6eyWcdnSi+buRN3v38sd9wv6i38h0mlXZjn0Ng4/zyCSiHTbDvEXNjsOaR7snFkvhfNtvl4sPibgFt+y8WyrGM
+sidebar_class_name: "delete api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Delete Endpoint"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/gateways/mcps/endpoints/{endpoint_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a connection.
+
+A connect sheet abandoning the row it made sends `pending_auth_mode`, the mode it
+made the row in, after it cancelled its own sign-in. The row is then deleted only
+while it is still in that mode with no credential bound and no sign-in in flight,
+decided under the connection's lock. A row that another tab took over since, or is
+signing in on, is kept, and the answer is 409.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"endpoint_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Endpoint Id"}},{"name":"pending_auth_mode","in":"query","required":false,"schema":{"anyOf":[{"type":"string","enum":["oauth","api_key","none"],"title":"GatewayAuthScheme","description":"How the gateway authenticates to an upstream."},{"type":"null"}],"title":"Pending Auth Mode"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"204":{"description":"Successful Response"},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

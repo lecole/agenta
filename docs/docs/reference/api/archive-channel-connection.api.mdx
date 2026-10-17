@@ -1,0 +1,71 @@
+---
+id: archive-channel-connection
+title: "Archive Channel Connection"
+description: "Archive Channel Connection"
+sidebar_label: "Archive Channel Connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1WM1u2zgQfhViLtsCapwt9qTTepMWzXbbBk3aS9YwxtLYYktRKkk5dQ0B+xD7hPskiyEpW5YTJzXaUyJy5pvhNz8ceg0OFxbSGzgrUGtSFiYJVDUZdLLSFzmkgCYr5JKmWZCYZpXWlPE2JFCjwZIcGQZZg8aSIIWtyFTmkIDUkEKNroAEDH1ppKEcUmcaSsBmBZUI6RrcqmZl64zUC0hgXpkSHaTQNB7FSadY4GyDLi5yaNsJg9q60pYs4zw/PeU/OdnMyNo7msJVk2Vk7bxR4n0UhoQddaQdi2NdK5n5Y48+WdZZ93yrDZPiZLCQVU1Qii5L7WhBZsdHlkggpzk2ykF62iY9WrxBvXo396ztgs+VD8lwWdopZk4uqWd3VlWKUPfsXlgxDlI920x0mzDCkoycSyb/MMbHTq6HMkdlI0xRWfcwyKsgtQfRJp1aNftEmevTFnJsG+GXngzWiKRsWcM8lyyC6nKHqK3EwLk2GeYYr9wNA5k0WaPQPPkLZ6T+tJV+9q5xdeOewtB9TsDuAENp2DtszwvdKLWjfR0PW5LDIw/bO9kgOXcMl7PdlT5HDzHyslEPEJKsQToqH6mFxuDqIC8D3e8j9Q2T2SaxNz2Ksj2Mt6zbJrs95Tio8x4E9wRD6CifojsE2GuGOTp65qT3534rZwFWjD1ZTZ3/DCMfAmw0kpOin2DkPMBGIx1dsxXfLI+z46+Px5D1x8pfKFu+fqiVjq2NlY6wH2qlo2tjxapmcWyuXrEut/wf5l7wKY4Sd136g5uApemrI6NRTT/T6nvmhBdRT7ymlecbH9dVw1zy+AZzjqHBWIeusYeudk5267CsDx5jWxe9m2Gjuel9x4X0mtf9LJIfjXHGuv6ashYXR8O8ieqBuuyzM5gdDXa1RTg0YFyFGO0j3aW0HVVvNik7SMfJgdnlLisJ1Aodh3qqKyczOlQDl1FUvA2iD/k4hD7k3DWhyatb3RuGdwfmcRj7R42OD4BUWFyJ2wKdYDIWlCcCdR5WcpkLXTnx3z//ilsSmpZkRHWr/9auIJE11lUlmV+swLpOhK1YuJB6IQoyJBottXWolBWoV2Gj0sIVJI2wMqcTaFs+/W/Pn++P9h9RydwP7uKFMZU5fq7PyaH0bSmOL0MBVWU7u98zfk3awcTTmxqr4KAvKrs4lBO9ounawH2ingzRFbzUPDn5JhRbsY6jVOa+9mD2Z3Lm8qt7MPuYm+B+lOul3zZEIUL3U3EeQnCohl9dX1/uAYb8uDOFRUx+cdZ/uZbkiorft3VlnX/JugJSGMVCt6Pta82O1jsv2nYUSwISsGSW3eu3MYoRsJY+AcJn4Vxt09GImpNMVU1+ggvSDk9QBsEJY2SNkW7lQcaXF69p9YowJwPpzaQvcMV5GzJxV2wTPawl33bdtAvjxhWVkd8wntq/xIug1fqsmFf9pBh758T48mK/IfS3uMAw8/nUWfLbkAyOvT0tt87Slxc4wvL3zQ5nA3MYzJye/HpyyksclxJ138SheA5G88gHZ+6oVih9bXnX1jHUm55uof805690+ANGF+9JAvz2ZeX1eoaWPhjVtrz8pSHDAZwksEQjccZ03qwhl5b/z+Pjd8/PTaeCJ+9jMT0V27fRrv9dkDVHeImq4S9IwA9Gg19dfL8pujRaR5lxllHtetp77ZHzbVMbl++urqFt/weXCzl4
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Archive Channel Connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/channels/connections/{connection_id}/archive"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Archive Channel Connection
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"connection_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Connection Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"connection":{"anyOf":[{"properties":{"flags":{"properties":{"is_active":{"type":"boolean","title":"Is Active","default":true},"is_verified":{"type":"boolean","title":"Is Verified","default":false},"is_hosted":{"type":"boolean","title":"Is Hosted","default":false}},"type":"object","title":"ChannelConnectionFlags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"channel":{"type":"string","title":"Channel"},"external_key":{"type":"string","format":"uuid","title":"External Key"},"data":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Data"},"status":{"anyOf":[{"properties":{"timestamp":{"type":"string","format":"date-time","title":"Timestamp"},"type":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Type"},"code":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Code"},"message":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Message"},"stacktrace":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Stacktrace"}},"type":"object","title":"Status"},{"type":"null"}]}},"type":"object","required":["channel","external_key"],"title":"ChannelConnection"},{"type":"null"}]},"platform_notice":{"type":"string","title":"Platform Notice"}},"type":"object","required":["platform_notice"],"title":"ChannelConnectionTeardownResponse","description":"Archive/unarchive: say what changed, and what did not — we never own\nthe customer's app, so nothing here uninstalls anything on their side."}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
