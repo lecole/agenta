@@ -1,0 +1,75 @@
+---
+id: fetch-workflow-catalog-preset
+title: "Fetch Workflow Catalog Preset"
+description: "Return a single preset for a template by key."
+sidebar_label: "Fetch Workflow Catalog Preset"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtv3DYQ/ivEnBKA2XWCnhYoUMNJGjdts1g76cFZ2LQ0kphIpMLHOpuF/nsx1GOlfciNkxY95GSvOPNxHh+HnNmAE6mF2RX8pc3HJNd3FpYcYrSRkaWTWsEMFui8UUwwK1WaIysNWnQs0YYJ5rAoc+GQ3a7ZR1xP3qv3qlaw7CbSXrmfT27YXYaKuazTlZYp7ViMiVQYB6ULxBm76sxYPpoaTNCginAqSvkk9TLG6V27/ngCHHSJRpCV5zHMIEEXZdetxHUknMh1el1vCRxKYUSBDg05vAElCoQZtA5cf8Q1cJDkcSlcBhwMfvLSYAwzZzxysFGGhYDZBty6JF3rjFQpcHDS5fThso3Ga1xDVfFul9qI77LHvA5hvcOSEGyplUVLSs9OTujPMIEXPorQ2sTnbNEIA4dIK4fKkbgoy1xGIZLTD5Z0Nj1DSkNxdrLeIeS0Z59UDlM0PQPPgsQui26eHqSBCVzBmLOblifEjER7FU8CSCJ87mB2UvEmisFitX6ThDQOravD3V8fhpFS0nxRPs+BAtja/SfpVjt2PwzqeQ+i4kBpH8loSCWHSDhMtWk82W4rHRZ2X7/i7QdhjFiP2nO2ha44JHk49MejKO11jxK9rW+1zlGonu3nlp32RHsJS0RuseIEhiuRe+G0uQ/qRSd4GMgqWZbo7oO5aMQOgwgTZXJFR+4ev1q5wzAGI10UqOL7kRY90T2wbR717QeMXE+1rYZndSl7GfK2n2firHBiLKPeyIdy+a2RRBpv8ocj5ISQoYhD8e2jiDiWxByRzwcGj+0zdG2Fxn7DUX3XqFccbO7Th8JckC4RIx5D4JBoUwgHM/BexqOI5zGMcWPR3o41AYZiY7ivmjRUHIxXTo4XTA6ofEEvhHLtsnDCSaAub8Dhg1iJ5sdybNdFsxWFuRZ/aKBr7aq9KkcLWf/K/1bW7dx3AxuL2+GXtgrQp8N7QSRN5HNhHr30ef6b1erJG+9K7x7DoWQ2d8A/0br/NtjRha+iz3wbUqK7Kr37EdzvFdzzOpwVBx20f0T2e0X2TRPPsZJK4BdNUTl4y/4oJ/9qOan4Ee/CQ+n+Z9ICV5Lu8uf0GDqQwAOp37ZfV+GVvjz6+KrbroO+DBsdaiNi1lGFUaPTNLpMpEIq63p982SUkQdt6Hq4qiLdn54922/53olcxuFJzl4YE97TD+z3YnRChqdf14cMBXIdDVa/hvTL3SZm6/rvumkpKg6FTcf6pz/QWpHilnjHRUMw2CWttrdXEO/X39CLuc89mL28nFEsP7uDuetTimJTm9/I9R+eXYrqDB0PxfM6BWNEeXV5Od8DrPlRoMs0zUfSZgriMpjBdpIybQYl05aSdrrpD0Wqad122+lmO8WogINFs2qHKaE7ABrUhDzXPzPnSjubTtFPolz7eCJSVE5MhKwFl4QReSPdOoCczs9f47p+n8LsatkXCHW5JtxQrEuSKOXrMF5pRi6n3mXayC9tYxqmLnUPEkIpVaL7uT8NxrHT+fne7GKwROdIRG47bWiWge+4vfWWXtFFOEXgUBS/dCuU9K5/gZPJ08kJfSq1dYVQvS1e0myLteWANfWAzdvZ1s7Mojvr/+PhXZM2OkfTMhdS9brMmqRX0GlAGI+Qz6TZEhU4zHbmdw1XaaU3c1tyyLR1BLnZ3AqLb01eVfT5k0dD7FtyWAkjxS1x4WoDsbT0f9xdPkcj/GjRHPjH7JhXLUMVWUgjDvoFzVxoOIGk0/Mf7t2LUSjGWXv4No3AaRRhaPRa1b27g05pV2N+fXEJVfU3Z7C6iQ==
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Fetch Workflow Catalog Preset"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/workflows/catalog/templates/{template_key}/presets/{preset_key}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Return a single preset for a template by key.
+
+Returns `count=0` when the preset is not defined.
+
+See: [Workflows](/reference/api-guide/workflows).
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"template_key","in":"path","required":true,"schema":{"type":"string","title":"Template Key"}},{"name":"preset_key","in":"path","required":true,"schema":{"type":"string","title":"Preset Key"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","description":"`1` when the preset is returned, `0` when not found.","default":0},"preset":{"anyOf":[{"properties":{"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"key":{"type":"string","title":"Key"},"categories":{"anyOf":[{"items":{"type":"string"},"type":"array"},{"type":"null"}],"title":"Categories"},"flags":{"anyOf":[{"properties":{"is_application":{"type":"boolean","title":"Is Application","default":false},"is_evaluator":{"type":"boolean","title":"Is Evaluator","default":false},"is_snippet":{"type":"boolean","title":"Is Snippet","default":false},"is_archived":{"type":"boolean","title":"Is Archived","default":false},"is_recommended":{"type":"boolean","title":"Is Recommended","default":false}},"type":"object","title":"WorkflowCatalogFlags"},{"type":"null"}]},"data":{"anyOf":[{"properties":{"uri":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Uri"},"url":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Url"},"headers":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"properties":{"version":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Version"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"}},"type":"object","title":"Reference"}]},"type":"object"},{"type":"null"}],"title":"Headers"},"runtime":{"anyOf":[{"type":"string","enum":["python","typescript","javascript"]},{"type":"null"}],"title":"Runtime"},"script":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Script"},"schemas":{"anyOf":[{"properties":{"parameters":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Parameters"},"inputs":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Inputs"},"outputs":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Outputs"}},"type":"object","title":"JsonSchemas"},{"type":"null"}]},"parameters":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Parameters"}},"additionalProperties":false,"type":"object","title":"WorkflowRevisionData"},{"type":"null"}]}},"type":"object","required":["key"],"title":"WorkflowCatalogPreset"},{"type":"null"}],"description":"Named parameter set defined against a template."}},"type":"object","title":"WorkflowCatalogPresetResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

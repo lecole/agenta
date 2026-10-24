@@ -1,0 +1,71 @@
+---
+id: set-session-stream
+title: "Set Session Stream"
+description: "Set Session Stream"
+sidebar_label: "Set Session Stream"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1V81u4zYQfhWCp11Aa6eLnnxqmqTYYLvYIHa7B8eIJ9LY4oYiteTIjmsI6EMU6AP1TfokxZCSJdtJ2u4iucQiRx+H33zzo60kWHo5msoxeq+s8TLpfs4SaUt0QMqay0yOpEe69XH31pNDKGQiHX6p0NOPNtvI0TY8KoeZHJGrMJGpNYSGeAvKUqs0wA0/e2t4zac5FsC/SseHkUIf1ptjVMZPtCmRzyenzFImkhRpXmhcFZeZrBOZAQUkMJuPCzmaHmI6XCk237eBLFPsEuirnnV0vjnX3n3GlGSd7DwxldaynnWeXLfYdSJLcFAgofMvcdJVh14nktBTCh5f4qRJi10nUpmyohe5z2VE5rs4SF/mIgG4TqSt6Ogaz734sbGv68PjOptP1t0vtF1fxzw4ZxEeY9aJXFgXr9fs3FmrEUwP6qdgkcgMF1BpkqMFaI+sbCRIc8yeffu8NXoEAB9KTAmzW3zAtKIuszqq93PsOVYuGjBx0YKFBHyEo64YTPsZPTvK4HGoJme2KMBkDZPhHj51qqSQtHKSozguQQIzRSMBwhMQiqKiUGGEXaETlKPQNr0fOrsWBj0NbsyNua6MF8ZSrsxSKPKoF+Lv3/8I1q4yBp14tSNKlBoMvhbKh31r9EbENykHYns/uDFzLj5zUSjnrIuW60YYb5RZ2XsUPocSxat5K5gxupVKsaebeSLucYOZsObGzAcx5+avhbcBMFPMRqEMkHUCtFoaL9aKcrHDvAxHNZAD9qlFuTEOKA+UgBEg7tCX7NW8dLYoaS5i4AeyrjmSjreNj4Xz7ckJ/9uPxrhKU/R+UWlx3RjLry73hc3wsUKPpiqieAzr2hOi41PApKhlIoFY831BNRr6wICHAjpHp1aYiYWzRWA0cjNknsRff4qQoaIAcuphwPXia7oQVe5bkmtSuRZpDZTm6L4B7FNEaPvjt1aRSLvG7La5ZIidIiz8MT9dOQDnYNM74qyFEc1lHy+w/eJRxHD+nxrSSDLK+fu3b48V/CtolcViccFp+/XyZWaV3iNj30DbdG/3PwRTGcIlutg7nmDyZxsdZLILv3xOpB/Qe1hiF5anTQMZYsK7becP5v2GzTspPfRgjhrjGXP5QP8aW+Ymut/Y9ULbhShG6GkqzmMInuvU7yaTqyPAqI+D0oYk2qQet3NugZRbnoJLG3pTCZTLkRw2mvTD2I78MOjUrcL4N93Kymk2g1KF6MbHnKj0o+EQq0GqbZUNYImGYAAqGs4YI62cok0AOb26fI+bdwgZOjmazvoGYxZllNm+2S40UKr3yGQZKPj5tKLcOvVb1A6HmF2KbzEbLPfrbqy/eICi1Hg4lnfCaQfv3oB9OAbvj6r9gbI3+NXdlBRKTr9kNQtPDDK9oqPMwvblehqYFadXl0f9YG+LUx/SoPSWprAtk4OYdaHiBlWExJeEUPyw22E/WADxmJPBd4OT8GFgPRVgekc8qrQ9J3dB5FwalhpUyPbg0rYR4W648qFHBhnKRHIi5SzW0VRut3fg8Ren65qXv1ToWFmzRK7AKbhjqqZcafJWY1t5j5s2jQ29CfWAzXUVNXVQHlnc8Y3TNMWSnrWd9fLp6uN4IhN513xAxlFAOlhznYC1HEnJH6IU7scq47Wt1GCWFVe0kYyY/PcPsJ0oNw==
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Set Session Stream"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/sessions/streams/"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Set Session Stream
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"properties":{"session_id":{"type":"string","title":"Session Id"},"data":{"anyOf":[{"properties":{"revision":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Revision"},"parameters":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Parameters"},"testcase":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Testcase"},"inputs":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Inputs"},"trace":{"anyOf":[{"additionalProperties":true,"type":"object"},{"type":"null"}],"title":"Trace"},"outputs":{"anyOf":[{},{"type":"null"}],"title":"Outputs"}},"type":"object","title":"WorkflowRequestData"},{"type":"null"}]},"force":{"type":"boolean","title":"Force","default":false},"detached":{"type":"boolean","title":"Detached","default":false},"expected_execution_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Expected Execution Id"}},"type":"object","required":["session_id"],"title":"SessionStreamCommandRequest","description":"The set_session_stream edit: a state mutation over the lock/row nest.\n\nRuns nothing itself — the runner (execution plane) is the only thing that runs.\n`data` mirrors the workflow-invoke shape (`WorkflowServiceRequestData`, keyed on\n`.inputs`) so the discriminator aligns with `WorkflowInvokeRequest.data.inputs`\nrather than a bespoke `prompt` string."}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"mode":{"type":"string","enum":["send","steer","cancel","attach"],"title":"CommandMode","description":"Derived from the inputs/data × force matrix."},"session_id":{"type":"string","title":"Session Id"},"turn_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Turn Id"},"watcher_id":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Watcher Id"},"detached":{"type":"boolean","title":"Detached","default":false},"cancelled_turn_ids":{"items":{"type":"string"},"type":"array","title":"Cancelled Turn Ids"}},"type":"object","required":["mode","session_id"],"title":"SessionStreamCommandResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

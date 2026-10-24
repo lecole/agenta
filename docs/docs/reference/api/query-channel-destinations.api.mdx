@@ -1,0 +1,71 @@
+---
+id: query-channel-destinations
+title: "Query Channel Destinations"
+description: "Query Channel Destinations"
+sidebar_label: "Query Channel Destinations"
+hide_title: true
+hide_table_of_contents: true
+api: eJylV1FzGjcQ/ivMPssGY5u09xTqZCaeuAmx3bwwjGfR6UCpTrpIOseUuf/eWUnAAfbZ0/rFIO1+Wu1+32pZg8eFg2wKV0vUWigHMwamEha9NPo6hwx+1sKuHnjcf8iF81KHXQcMrPhZC+f/MPkKsjVwo73Qnj5iVSnJg2H/hzOa1hxfihLpU2XpEC+FC7bWywK5f5A5ffWrSkAGzlupF8CgMLZEDxnUtcyBgZdekcE4ufWuc2hYclsD6tXXArLpMRA32hFOugw0bGuja6Wgme3A72m9YfH63bAlPt0IvfBLyIaDQRfotwDWMFCylP5ZVKm9WAgbYWVZl5CdDQYMSqnTt64DbgJuw4DX1hn75rhHF12oVxGsaRhgnkuqKapJq4QFKic2FQAz/yG4T+yQVuREsHaN29CxFB9atApJuo3EgoYO3eF4W4uw4CqjXWTPcDCgf7lw3MqKICCDu5pz4VxRq95tMo4E+C/83CN9tgbpRek6zV5g8ubWresekPc1yh4QlEEuCqzVPquhUuhJNV0xTDY2DQONZad0usjxhXyJcagfKuN868y5MUqgbh16hbo3IaPkYAXmrzrcklFycAItX77qchfNGgauripjvXvwSzrMdbreJePefTJumm5WH5S8lflWQlpX3bvEM8F1KmPHE0BrcfU8odzb5P8WvTPQxot9yh+ivBTRl+D5XP46pD/BhSDJNwwuhsNjVX9HJfMom4/WGvt/JO1Rqg4xK8P3dt+Qx03rbmYvp+XG8G0tS7foEuifwrmQj5e7w8Y0JKO3ebKkruoow7R9HRaIFv6pBXNcEcrlk3+V9ZSbGH6ya3FnV6JYoS7OhhJ0UeTT/f3kCDDyY58Y4c3oJUb1PuwPKaXwS0OjTFJjhfTkQT81TNf3xijXb3f5fnz2GThhH4V1ofC1VeSGlQxVj1+X3lcu6/dFfcqVqfNTXAjt8RRlNJwRBq+t9KsAMp5cfxarTwJzYSGbztoGd0TWSL99s23JsJKfBcUVOzaMa780Vv4TOUWlp5CiF2WJZHC7m9E+PmFZKXE0c8F5gb9dFqOLk8t3Z+9OLi5Hw5P5ecFPhvz30XkxGmGBI2BH/EvD0W4hzTWDXQdqdQqpC9Om5ThkqjeeXMNhPfe2SOLIA6M31w7bwA5qsEs9MBBlEDh4geX77Q7FQQWNxwxOz04H4cE0zpeoW0d0Mmov2G1xSDv9SqEM6g6hrRPZppvXmbwD3SJKGzQmc8ZgGV7RKazXc3TiL6uahpZTsqczBo9oJc4piVPqNcsNm9bwt1hthKz9SZoRHlHVkT0HDZJoHD3GnIvKd9rOWkqafL27BwbzNPeXJicfi7+oU+AvyADod8R2Ygpra1CoFzX1tAwiJv39C8g6R1g=
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Query Channel Destinations"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/channels/tools/destinations/query"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Query Channel Destinations
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"properties":{"artifact_id":{"type":"string","format":"uuid","title":"Artifact Id"},"type":{"anyOf":[{"type":"string","const":"channel"},{"type":"null"}],"title":"Type"},"query":{"anyOf":[{"type":"string","maxLength":200},{"type":"null"}],"title":"Query"},"limit":{"anyOf":[{"type":"integer","maximum":100,"minimum":1},{"type":"null"}],"title":"Limit"},"cursor":{"anyOf":[{"type":"string","maxLength":64},{"type":"null"}],"title":"Cursor"}},"additionalProperties":false,"type":"object","required":["artifact_id"],"title":"ChannelDestinationsQueryRequest"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"destinations":{"items":{"properties":{"destination_id":{"type":"string","title":"Destination Id"},"type":{"type":"string","const":"channel","title":"Type","default":"channel"},"platform":{"type":"string","title":"Platform"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"can_post":{"type":"boolean","title":"Can Post"},"can_read":{"type":"boolean","title":"Can Read"},"can_search":{"type":"boolean","title":"Can Search"},"supports_threads":{"type":"boolean","title":"Supports Threads"}},"type":"object","required":["destination_id","platform","can_post","can_read","can_search","supports_threads"],"title":"ChannelDestination"},"type":"array","title":"Destinations"},"cursor":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Cursor"},"notes":{"items":{"type":"string"},"type":"array","title":"Notes"}},"type":"object","title":"ChannelDestinationsPage"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

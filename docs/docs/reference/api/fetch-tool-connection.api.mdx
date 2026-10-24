@@ -1,0 +1,71 @@
+---
+id: fetch-tool-connection
+title: "Get Connection"
+description: "Get a connection by ID."
+sidebar_label: "Get Connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtz20YM/isanJIZRnI9PfFU1c7DddN4bLkXj0YDkZC06ZLL7GI9UTX87xnsUiIp2YrjcU7tySYJfMB+eCygDTAuHaR3MDFGO5gmkJPLrKpYmRJSeE88wEFmypIyeTWYrwcX50NIwFRkUV5d5JDCgjhbzdgYPWuFIYEKLRbEZMXIBkosCFJoRWYqhwSUmKqQV5CApS9eWcohZespAZetqEBIN8DrSpQdW1UuIYGFsQUypOB9QGHFWgTOWm8vcqjrqYC6ypSOnOCcnpzIn/5Bb3yWkXMLrwfXjTAk4ihTySKOVaVVFk48+uxEZ9PxrbLCB6toITM+KjUuq5JpSbbno0gI2wv0miE9qZMOLcFguf60CKz1wRc6hKwrgHmuRA31VU+0lWgcmRujCUuok3065c3DMJApm3mN9tWfOCf9hzPlm0+eK8+v5UARxcw/U8YgXG+PuC8N9YF060Xpte5pvwunFJX/wmknzWELYnzmYTsn28u6nuFi3n/T5eh7jLzz+juEJBtQTMUTtdBaXB/Pgr7uj5H6UciUsrKETPkM+RhxnX6SI9MbVgUdhT+LsINxcMtX+c8wchthGyM5afoJRs4jbGNkS9d8Lc35aXZCB34KWb+vQ09u+XpRK1u2dla2hL2olS1dOyvxVntSTR6A/YUhOP3b6HlQ5x2IOgGn/fK5UDeiWyfwcqRFpipr7lVOdvYPrR+60qn0hUwjmSkq45SBBHBJJSN0m6Ux0qAC0KUqA3DodXEeeQx750krOrikdSAf/2+7L9Z2zzG2XcfI3h2bZCzlylLGM2/1czP1usEY3FoN9YGj/axpJ8Ob6Nwh8kMQ7Uh618/gw7ybPmbwiaYeVt5NpHUtSr+enh4OsH+jVnnM6rfWGvv86TUnRhUC0iTVvoA2We/rjxTFtN7Lw84IZaKDYRByy2M1/JGcwyW1ifm4aCBjMJGvoU9IPov4rhs0CZ7x1w7MQUDOhMuv/GCKdfNDuInuN3KdjGhDFCP0OBXnMQTHMuTDZHJ1ABjzoyBeGdnKlsRhB+MVpDCS7cyN2iXDjTa9RayGBBzZ++2yFqoSRlipEMn4uGKuXDoakR9m2vh8GPvzEFUUnApG5q3idQAZX11c0voDYU4W0rtpV+BGEjCmVF9sFwas1GWos2ZxHHteGav+xWa9DIvjKmrVIbwL043uODg3GF9dwP5m2/sklYJZSIytpXjtJHvHbk8rt1UR6gSYsPht90XCKhxGMyfDX4Yn4eozjgssOyZktz7rLst7M8CufI9s4Q1PkpqjSqMKxdO00xj3Owhxh+56KU9pfwmfJrAyjkV+s5mjo1ur61pef/FkJZbTBO7RKpwLs3cbyJWT/3NIF6gdHXH/1XVTIK8Hj7m8jXcpwb5H7eUJEgh3+d7vBaGHrLYZtWlkxllGFXe0D1qepN6uNN6/nUBdfwM/AtNz
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/tools/connections/{connection_id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get a connection by ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"connection_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Connection Id"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"connection":{"anyOf":[{"properties":{"flags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Flags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"provider_key":{"type":"string","enum":["composio","agenta"],"title":"ToolProviderKind"},"integration_key":{"type":"string","title":"Integration Key"},"data":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Data"},"status":{"anyOf":[{"properties":{"redirect_url":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Redirect Url"}},"type":"object","title":"ToolConnectionStatus"},{"type":"null"}]}},"type":"object","required":["provider_key","integration_key"],"title":"ToolConnection"},{"type":"null"}]}},"type":"object","title":"ToolConnectionResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
