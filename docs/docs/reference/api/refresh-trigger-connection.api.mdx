@@ -1,0 +1,71 @@
+---
+id: refresh-trigger-connection
+title: "Refresh Connection"
+description: "Refresh Connection"
+sidebar_label: "Refresh Connection"
+hide_title: true
+hide_table_of_contents: true
+api: eJztWEtv20YQ/ivCnBKAsVyjJ56q2jXiuqkFW+5FEIQROZI2XXKZfRhRBf73Ynb5lqw4hnNqT4a48/zm29kZ78HixkA8h5kWmw1pA4sIVEEarVD5TQoxaFprMtulDRLLROU5JXwMERSoMSPLivF8DzlmBDG0IkuRQgQihxgKtFuIQNMXJzSlEFvtKAKTbClDiPdgdwUrG6tFvoEI1kpnaCEG57wVK6xkgcvG+ugmhbKMGr9rpROq/X1xpHc9h2uU5pjHlVKSkNNJaY1O2ka0dnntDZflgs2ZQuWGDBu4OD/nPymZRIvCYxLDg0sSMmbt5Oi+EoaIMbGUWxbHopAi8QiPPxvW2XeCKjTjb0XwkCgXlKpYRW5pQ7oHB0t0Yj8vo04FvMN8d7f2BeobX0tf/a4ApqlgNZTTnmgrMQCN4e9Xjr8cNwOJ0ImTqN/9gSuSvxuVf7hztnD2PScUrKjVZ0osMNZ1ikNpKA+k2yhyJ2VP+9pnySr/hWxnVbIZWXxlsp3MBqzrOc5W/S9djL6FyLWT3wAk2oOwlL1QC7XG3WkW9HW/D9RPDCZfK01oKV2iPQVcp3WlaOmDFRmdNH8ZzI4mPixXpD/CyWMwWzlJSdIPcHIVzFZOarhWO34HXubHN/uXgPXrzrf/Fq839VKj1XipAXtTLzVcjZfwkL3oTh4Y+xN9cfqv0etMXXVMlBEY6TavNfXAumUEbwdaQKrQ6kmkpJd/0+7Y9EC5y3iwSVRWKCMUdHtkGGWmlYlbkXuTvsuFyec5q00MrejolnYedvy/4b5Zw73C0HCNRevMqRlGUyo0JXbptHwtR+8rG6NHLXmgHAR6QJx2An0I8R0aP2alnUTnffoeUu+QrK3PF3p7Vr8ZSsuS9X6+uDicYf9CKdJA79+0Vvr1A2xKFoWvTMWuoYBUSe/0e27HohwQsjNFqRCgn4XM5tRl/kTG4IZahj4v6sEYzfjUNwwmNos3baFiemK/dswc1OSSsfxqj3KtyxLGJoRfyXV40ZYoVOh5KK5CCU6R5ONsNj0wGPjRJ8Z92AZHl90tMCO7VbwrFspYvxXaLcQwrlZGM27XETPe97bDclztlxCBIf1Ub5L+NsMYC+ELH35urS1MPB6TO0ukcukZbii3eIYiCC7YRuK0sDtvZDK9uaXdR8KUNMTzRVfggfkaGNgXa6qGhbj1l7PaLifObpUW/2CVtd8yt0Gr9GxYqy4ZJj640WR6A0MUe0d8sTDxPKo9+WOIBmm32fL7lvlrBZYw+6U5YRYwhsHN+dlPZ+f+sVTGZph3XByt42ByqHBgpo4LicLfparNhhLPoS4xdHdO/hUP/wlQ13kRwZZpEs9hv1+hoUcty5I/h42dC5cKgyvZ2dn9c9zs908oHUfmK/6EWrDwccVBSk0Tg3f31T17P2pftX6qNQ/yXddnHUw/P9+KtjXT9pXMJEmosB3tg87JGTTXZ3r3MIOy/Bf8WQmY
+sidebar_class_name: "post api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Refresh Connection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/triggers/connections/{connection_id}/refresh"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Refresh Connection
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"connection_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Connection Id"}},{"name":"force","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Force"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{"properties":{"count":{"type":"integer","title":"Count","default":0},"connection":{"anyOf":[{"properties":{"flags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Flags"},"tags":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"boolean"},{"type":"string"},{"additionalProperties":"circular(LabelJson-Output)","type":"object"}],"title":"LabelJson-Output"},"type":"object"},{"type":"null"}],"title":"Tags"},"meta":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Meta"},"created_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Created At"},"updated_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Updated At"},"deleted_at":{"anyOf":[{"type":"string","format":"date-time"},{"type":"null"}],"title":"Deleted At"},"created_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Created By Id"},"updated_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Updated By Id"},"deleted_by_id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Deleted By Id"},"name":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Name"},"description":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Description"},"slug":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Slug"},"id":{"anyOf":[{"type":"string","format":"uuid"},{"type":"null"}],"title":"Id"},"provider_key":{"type":"string","enum":["composio"],"title":"TriggerProviderKind"},"integration_key":{"type":"string","title":"Integration Key"},"data":{"anyOf":[{"additionalProperties":{"anyOf":[{"type":"string"},{"type":"integer"},{"type":"number"},{"type":"boolean"},{"additionalProperties":"circular(FullJson-Output)","type":"object"},{"items":"circular(FullJson-Output)","type":"array"},{"type":"null"}],"title":"FullJson-Output"},"type":"object"},{"type":"null"}],"title":"Data"},"status":{"anyOf":[{"properties":{"redirect_url":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Redirect Url"}},"type":"object","title":"TriggerConnectionStatus"},{"type":"null"}]}},"type":"object","required":["provider_key","integration_key"],"title":"TriggerConnection"},{"type":"null"}]}},"type":"object","title":"TriggerConnectionResponse"}}}},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

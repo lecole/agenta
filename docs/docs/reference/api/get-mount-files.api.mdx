@@ -1,0 +1,71 @@
+---
+id: get-mount-files
+title: "Get Mount Files"
+description: "Get Mount Files"
+sidebar_label: "Get Mount Files"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vl1v2zYU/SvEfdoAxU6yPWkvM9ouDdqhQZJ9AIGRMNK1zE4iWfKqiWvovw+XtGQqdgp3XZ4Si4f3HN7vNZCsPOQ38LtpNXmYZ2AsOknK6PMScqiQbhs+u12oGj1kYKWTDRI6vrcGLRuEHCJGlZCB0pCDlbSEDBx+apXDEnJyLWbgiyU2EvI10MryPU9O6QoyWBjXSIIc2jZYIUU1A4IwcV5C12UD28Z6YPrUoluNqBay9iMuqVcfFkHtmJUtbr7otq6hm295L5gi5XQoyxfmvGSKlNO4Et1/IkXdNhxXhwVqgixazKLnmPJgUR+ChlRVrRpF3+MKpQmr8LBGadWw0uOvSXgfCFMJJdrvy4BEgnyMEk4SOSdfk/M6kKdyHhQtb4tYQoeL2ti/N6ZGqSGDEheyrWmA9oR/KVqKV9F8SlspupUP0uFLkJ4pErNgPKVUuqjbEm8rRarShjlegPs8soizLUsq4vFIVqhJHklrj3xh7OCAJcpYMf9zZf59NIuMM2uPrgJjx+cOvTXao2fDp8fH/KdEXzhluYVCDldtUaD3i7YWlxswZFAYTVyXLMfaWhWh404/er6z3ortuq7L4OeTn3YNXy9R3HFTuhPcmoXygowRtXQVCjLCIbVOC+kF4SP9IkrzoGsjS6FILJxpxN00NG0/XffNu5uGJj/toXdCaU8oywmwitPTXRV/ylqVQbx445xx3/A2sI5nDanovRJJqpr/U4SN3wXUphidHhDHvsq7eTe0POmcXCUD5r2JAvmJja/2zaZhFqH3skIYjD0PDc4Q13zacW7aNjhkm+D8ocugoMfEjLn/iAUlZl6xLx9D79vBbFP8Jvgmyt/gktzdhihG6HlXvI4h2EfWQ95eX1/sGIxZOk6MMyQRZ/dvm8WhQVqazU7RT6IcnktCyMCj+9yvGa2rGSytCvGNP5dE1ufTKbaTojZtOYltYSJVBM7ZRtE6RatgZHZx/g5Xb2OPyG/mKeCK0zIm2hg2BEda9Q5X/SjNYdbS0jj1JWbPuAF1IegLk8Y8dhAxuziHp84aHXH9yCKkS88UjiF78uztayEDbEL1AKFsfh1OONjsw0hzPDmZHPMnazw1UicUu+EaKRycwNk4tbVUoV6CnvUmlDdxCeS7ebIOxmjOM1gaT4xar++lxz9c3XX8Oc4NDk+pvLyvk579D662y95nWbesIMT/GehmRzsE2q9Wh2D7hecQbL+ZHIIdrw2H3Egn/iH4veN6e3HOP5zim/sj8CQJhtYOP1xuus+PArL9ydGXjV6lnL2yIUNCb172NfktGp4jjgR7l4SRzyJuVhRo0+juDC1209C8zt5cQ9f9C3Vtdek=
+sidebar_class_name: "get api-method"
+info_path: reference/api/agenta-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Mount Files"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/mounts/{mount_id}/files"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Mount Files
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"mount_id","in":"path","required":true,"schema":{"type":"string","format":"uuid","title":"Mount Id"}},{"name":"path","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Path"}},{"name":"read","in":"query","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"Read"}},{"name":"order","in":"query","required":false,"schema":{"anyOf":[{"enum":["recent","name","path"],"type":"string"},{"type":"null"}],"title":"Order"}},{"name":"limit","in":"query","required":false,"schema":{"anyOf":[{"type":"integer","minimum":0},{"type":"null"}],"title":"Limit"}},{"name":"depth","in":"query","required":false,"schema":{"anyOf":[{"type":"integer","maximum":1,"minimum":1},{"type":"null"}],"title":"Depth"}},{"name":"with_counts","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"With Counts"}},{"name":"git_aware","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Git Aware"}},{"name":"include_gitignored","in":"query","required":false,"schema":{"type":"boolean","default":false,"title":"Include Gitignored"}},{"name":"x-agenta-app-scope","in":"header","required":false,"schema":{"anyOf":[{"type":"string"},{"type":"null"}],"title":"X-Agenta-App-Scope"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful Response","content":{"application/json":{"schema":{}}}},"413":{"description":"The `read` file is too large to return as text; download it from `/mounts/{mount_id}/files/download` instead."},"422":{"description":"Validation Error","content":{"application/json":{"schema":{"properties":{"detail":{"items":{"properties":{"loc":{"items":{"anyOf":[{"type":"string"},{"type":"integer"}]},"type":"array","title":"Location"},"msg":{"type":"string","title":"Message"},"type":{"type":"string","title":"Error Type"},"input":{"title":"Input"},"ctx":{"type":"object","title":"Context"}},"type":"object","required":["loc","msg","type"],"title":"ValidationError"},"type":"array","title":"Detail"}},"type":"object","title":"HTTPValidationError"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
